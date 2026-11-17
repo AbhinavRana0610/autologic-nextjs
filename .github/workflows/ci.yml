@@ -1,0 +1,49 @@
+# CI: type-check and production-build every push to main and every pull request.
+#
+# Deployment (CD) is handled by Vercel's Git integration on the "autologic-nextjs" project:
+#   - push to main      -> production deploy
+#   - pull request      -> preview deploy (Vercel posts the link on the PR)
+# This workflow does not deploy, so nothing is deployed twice and no Vercel token is needed.
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# A newer push to the same branch/PR cancels the run still in progress.
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Typecheck & build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      NEXT_TELEMETRY_DISABLED: 1
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+        with:
+          # Same major version as the Vercel project (Settings -> Build -> Node.js Version).
+          node-version: 26
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Build
+        run: npm run build
