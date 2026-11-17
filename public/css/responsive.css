@@ -1,0 +1,132 @@
+/*
+ * Mobile / tablet fixes for the whole site.
+ *
+ * Loaded from app/layout.tsx after the other stylesheets. Page bodies carry their own inline
+ * <style> blocks that come later in the document, so rules here are prefixed with "html body"
+ * to win on specificity instead of relying on order. Every rule sits inside a max-width media
+ * query, so the desktop layout is unchanged.
+ */
+
+/* ---------- Header: mobile navigation drawer (all pages) ---------- */
+@media (max-width: 900px) {
+  /* The header has backdrop-filter, and a backdrop-filter nested inside it makes the drawer
+     render see-through (page content shows behind the links). Use a solid background. */
+  html body nav#main-nav {
+    background: #111111;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    overscroll-behavior: contain;
+  }
+
+  /* "nav#main-nav ul li a" (1.25rem) out-ranks the dropdown sizes in header.html, so the
+     nested product links were 1.25rem too and ran off the right edge of the drawer. */
+  html body nav#main-nav .dropdown-menu li a {
+    font-size: 1rem;
+    padding: 12px 16px;
+    line-height: 1.35;
+    white-space: normal; /* desktop rule is nowrap; long names ran off the drawer */
+  }
+
+  /* "nav#main-nav ul { display: block }" also out-ranked ".submenu { display: none }", so all
+     three product submenus were always expanded and their arrows did nothing. */
+  html body nav#main-nav .dropdown-menu .submenu {
+    display: none;
+  }
+
+  html body nav#main-nav .dropdown-menu .submenu.open {
+    display: flex;
+  }
+
+  html body nav#main-nav .dropdown-menu .submenu li a {
+    font-size: 0.92rem;
+    padding: 10px 14px;
+  }
+
+  html body nav#main-nav .dropdown-menu .submenu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  /* Close icon was dark grey on the dark drawer. */
+  html body .menu-toggle:has(.fa-times) {
+    color: #ffffff;
+  }
+}
+
+/* ---------- Forms: stop iOS Safari zooming in when a field is focused ---------- */
+@media (max-width: 768px) {
+  html body input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="button"]),
+  html body select,
+  html body textarea {
+    font-size: 16px;
+  }
+}
+
+/* ---------- Footer: keep the copyright line clear of the floating buttons ---------- */
+@media (max-width: 600px) {
+  html body .footer-bottom {
+    padding: 16px 84px 28px 24px;
+    text-align: left;
+  }
+}
+
+/* ---------- Home: "From Ingot to Precision" stage cards ---------- */
+@media (max-width: 992px) {
+  /* A 1fr grid column grows to the min-content width of the horizontal stepper row, which
+     made the stage cards ~520px wide on a 390px phone and cut off their right side. */
+  html body .craft-split-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  html body .craft-split-layout > * {
+    min-width: 0;
+  }
+
+  html body .craft-vertical-stepper,
+  html body .stepper-nodes-list {
+    max-width: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* ---------- Product pages: top dark banner ---------- */
+@media (max-width: 640px) {
+  /* The banner image had a fixed 240px height with the text absolutely positioned over it, so
+     longer titles/descriptions spilled past the dark area or were clipped. Stack image and
+     text in one grid cell so the banner grows with its text. */
+  html body .page-banner {
+    display: grid;
+  }
+
+  html body .page-banner-img {
+    grid-area: 1 / 1;
+    height: 100%;
+    min-height: 240px;
+  }
+
+  html body .page-banner-overlay {
+    grid-area: 1 / 1;
+    position: relative;
+    inset: auto;
+    padding: 28px 0;
+    /* On a narrow screen the text spans the light right side of the image too. */
+    background: linear-gradient(90deg, rgba(13, 12, 10, 0.9) 0%, rgba(13, 12, 10, 0.72) 100%);
+  }
+}
+
+/* ---------- Contact page hero ---------- */
+@media (max-width: 900px) {
+  /* background-attachment: fixed is not supported on iOS and renders a hugely zoomed image. */
+  html body .contact-hero {
+    background-attachment: scroll;
+    height: auto;
+    min-height: 300px;
+    padding: 60px 0;
+  }
+
+  html body .contact-hero-text h1 {
+    font-size: clamp(1.6rem, 7vw, 2rem);
+  }
+}

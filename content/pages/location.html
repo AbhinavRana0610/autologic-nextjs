@@ -638,7 +638,8 @@
  const modalTitle = document.getElementById('modalTitle');
  const modalDetails = document.getElementById('modalDetails');
  const hoverDisplay = document.getElementById('hoverDisplay');
- const defaultHoverText = 'Hover over a pin to see details...';
+ const defaultHoverText = window.matchMedia('(hover: none)').matches ? 'Tap a pin to see details...' : 'Hover over a pin to see details...';
+ if (window.matchMedia('(hover: none)').matches) hoverDisplay.innerHTML = defaultHoverText;
  // Get the initial colour for the hover display background (maroon with 0.9 alpha)
  const defaultHoverColor = 'rgba(143, 0, 0, 0.9)';
  const hoverPinColor = '#6b0000'; // The darker hover colour
