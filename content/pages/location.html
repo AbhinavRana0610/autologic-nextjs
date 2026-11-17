@@ -1,0 +1,775 @@
+
+
+<!-- Pure CSS Styles -->
+<style>:root {
+ /* --- User Defined Colors --- */
+ --primary-color: #8f0000;
+ /* Maroon/Dark Red - Used for map frame, headings, and hover bar background */
+ --accent-color: #8f0000;
+ /* Maroon/Dark Red - Used for pin color and modal divider */
+ --dark-color: #212121;
+ /* Near Black - Used for body text */
+ --light-bg: #ffffff;
+ /* White - Used for modal background and pin border */
+ --dark-hover: #6b0000;
+ /* Slightly darker maroon for hovers/buttons */
+ --subtle-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+ --strong-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+
+ /* Specialized colors for contrast on dark backgrounds */
+ --map-text-light: #fff5e6;
+ /* Very light cream/yellow for text on maroon */
+ --map-text-highlight: #ffc107;
+ /* Bright gold/yellow for highlighted text */
+
+ /* Retaining map shadow logic for deep contrast */
+ --shadow-map: 0 8px 25px rgba(0, 0, 0, 0.4);
+ }
+
+ /* body {
+ font-family: 'Inter', sans-serif;
+ margin: 0;
+ background-color: #f4f7f9;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 2rem 1rem;
+ min-height: 100vh;
+ } */
+
+ h1 {
+ color: var(--primary-color);
+ margin-bottom: 2rem;
+ margin-top: 53px;
+ font-size: 2rem;
+ text-align: center;
+ }
+
+ /* --- Map Container --- */.map-container {
+ width: 80%;
+ max-width: 1120px;
+ margin-left: auto;
+ margin-right: auto;
+ /* Bottom 20% of the original 16:9 map is cropped */
+ aspect-ratio: 16 / 7.2;
+ /* Using a real world map image URL (Dark Theme) */
+ background-image: url('img/map.avif');
+ background-size: auto calc(100% / 0.8);
+ background-position: center top;
+ border-radius: 12px;
+ box-shadow: var(--shadow-map);
+ position: relative;
+ overflow: hidden;
+ /* border: 5px solid var(--primary-color); */
+ margin-bottom: 78px;
+ }
+
+ /* --- Hover Display Bar (New) --- */.hover-display {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ min-height: 50px;
+ /* Use primary color with transparency */
+ background-color: rgba(0, 0, 0, 0.9);
+ color: var(--map-text-light);
+ padding: 0.5rem 1rem;
+ font-size: 1rem;
+ font-weight: 700;
+ text-align: center;
+ z-index: 30;
+ transition: background-color 0.3s;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ border-bottom: 3px solid var(--dark-color);
+ }.hover-display.name {
+ font-weight: 900;
+ color: var(--map-text-highlight);
+ /* Highlighted name */
+ font-size: 1.2rem;
+ }.hover-display.details {
+ font-weight: 400;
+ font-size: 0.9rem;
+ margin-top: 0.25rem;
+ }
+
+ /* --- Map Pin Styles (Sharp Pin) --- */.map-pin {
+ position: absolute;
+ /* Head of the pin */
+ width: 20px;
+ height: 20px;
+ background-color: var(--accent-color);
+ border-radius: 50%;
+ border: 3px solid var(--light-bg);
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+ cursor: pointer;
+ z-index: 20;
+ transition: all 0.3s ease;
+
+ /* Position the circle head above the coordinate */
+ transform: translate(-50%, -100%);
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 14px;
+ color: var(--light-bg);
+ font-weight: bold;
+ }
+
+ /* Create the sharp point using a pseudo-element (triangle border hack) */.map-pin::after {
+ content: '';
+ position: absolute;
+ bottom: -11px;
+ left: 50%;
+ width: 0;
+ height: 0;
+ border-left: 6px solid transparent;
+ border-right: 6px solid transparent;
+ border-top: 12px solid var(--accent-color);
+ transform: translateX(-50%);
+ z-index: 19;
+ transition: border-top-color 0.3s ease;
+ }.map-pin:hover {
+ background-color: var(--dark-hover);
+ transform: translate(-50%, -100%) scale(1.2);
+ box-shadow: 0 0 20px rgba(143, 0, 0, 0.9);
+ /* Maroon glow */
+ z-index: 25;
+ }.map-pin:hover::after {
+ border-top-color: var(--dark-hover);
+ }
+
+ /* --- Info Card Modal Styles --- */
+.info-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 36, 99, 0.68);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.info-card {
+  background: #ffffff;
+  padding: 28px 24px;
+  border-radius: 18px;
+  max-width: 520px;
+  width: 100%;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+  transform: scale(0.92);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+  border: 1px solid rgba(10, 36, 99, 0.08);
+}
+.info-modal.visible .info-card {
+  transform: scale(1);
+  opacity: 1;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f0f3f8;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+.modal-header h2 {
+  margin: 0;
+  color: #0a2463;
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.modal-close-icon {
+  background: #f1f4f9;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  line-height: 1;
+  padding: 0;
+}
+.modal-close-icon:hover {
+  background: #e02424;
+  color: #fff;
+  transform: rotate(90deg);
+}
+.info-card p#modalDetails {
+  color: #334155;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0 0 18px 0;
+  background: #f8fafc;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border-left: 4px solid #0a2463;
+}
+.modal-section-title {
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #0a2463;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.modal-prod-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.modal-prod-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+.modal-prod-btn:hover {
+  border-color: #0a2463;
+  background: #f0f5ff;
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(10, 36, 99, 0.12);
+}
+.modal-prod-icon {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background: #f1f5f9;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+.modal-prod-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.modal-prod-info strong {
+  color: #0a2463;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+.modal-prod-info span {
+  color: #64748b;
+  font-size: 0.78rem;
+  margin-top: 2px;
+}
+.modal-prod-arrow {
+  color: #0a2463;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+.modal-prod-btn:hover .modal-prod-arrow {
+  transform: translateX(4px);
+  color: #8f0000;
+}
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  border-top: 1px solid #f0f3f8;
+  padding-top: 16px;
+}
+.modal-quote-btn {
+  background: linear-gradient(135deg, #0a2463, #1e4bb8);
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+}
+.modal-quote-btn:hover {
+  background: linear-gradient(135deg, #8f0000, #b51a1a);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(143, 0, 0, 0.3);
+}
+.close-button {
+  background: #f1f4f9;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+.close-button:hover {
+  background-color: #e2e8f0;
+  color: #1e293b;
+}
+
+/* --- Responsive Adjustments --- */
+ @media (max-width: 768px) {
+ h1 {
+ font-size: 1.5rem;
+ }.map-pin {
+ width: 14px;
+ height: 14px;
+ transform: translate(-50%, -100%);
+ }.map-pin::after {
+ bottom: -7px;
+ border-left: 4px solid transparent;
+ border-right: 4px solid transparent;
+ border-top: 8px solid var(--accent-color);
+ }.hover-display {
+ font-size: 0.8rem;
+ min-height: 40px;
+ }.hover-display.name {
+ font-size: 1rem;
+ }
+ }.locpage-section {
+ padding: 80px 20px;
+ background: #f9fbff;
+ }.heading {
+ text-align: center;
+ margin-bottom: 50px;
+ }.heading h2 {
+ font-size: 38px;
+ color: #0a2463;
+ margin-bottom: 15px;
+ }.heading p {
+ color: #666;
+ font-size: 16px;
+ }.locpage-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+ gap: 25px;
+ }.locpage-card {
+ background: #fff;
+ padding: 30px 20px;
+ text-align: center;
+ border-radius: 16px;
+ text-decoration: none;
+ transition: all 0.4s ease;
+ position: relative;
+ overflow: hidden;
+ box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+ }
+
+ /* Hover glow effect */.locpage-card::before {
+ content: "";
+ position: absolute;
+ inset: 0;
+ background: linear-gradient(120deg, #0a2463, #3e92cc);
+ opacity: 0;
+ transition: 0.4s;
+ z-index: 0;
+ }.locpage-card:hover::before {
+ opacity: 1;
+ }.locpage-card:hover {
+ transform: translateY(-10px) scale(1.03);
+ box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+ }.locpage-card * {
+ position: relative;
+ z-index: 1;
+ }.locpage-icon {
+ font-size: 28px;
+ margin-bottom: 12px;
+ }.locpage-title {
+ font-size: 18px;
+ font-weight: 600;
+ color: #0a2463;
+ transition: 0.3s;
+ }
+
+ /* text color on hover */
+.locpage-card {
+  cursor: pointer;
+}
+.locpage-explore {
+  display: inline-block;
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 500;
+  margin-top: 8px;
+  transition: color 0.3s;
+}
+.locpage-card:hover .locpage-title,
+.locpage-card:hover .locpage-icon {
+  color: #fff;
+}
+.locpage-card:hover .locpage-explore {
+  color: #ffdd80;
+}
+</style>
+
+
+<h1>Welcome to Autologic Industries</h1>
+
+<div id="mapContainer" class="map-container">
+ <!-- New display bar for hover text -->
+ <div id="hoverDisplay" class="hover-display">
+ Hover over a pin to see details...
+ </div>
+
+ <!-- Pins will be dynamically added here by JavaScript -->
+</div>
+
+<!-- Info Modal -->
+<div id="infoModal" class="info-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div id="infoCard" class="info-card">
+    <div class="modal-header">
+      <h2 id="modalTitle">📍 Location Overview</h2>
+      <button class="modal-close-icon" onclick="closeModal()" aria-label="Close Modal">&times;</button>
+    </div>
+    <p id="modalDetails"></p>
+    <div class="modal-section-title">
+      <span>📦</span> Available Regional Products
+    </div>
+    <div id="modalProductLinks">
+      <!-- Populated dynamically via JS -->
+    </div>
+    <div class="modal-actions">
+      <button type="button" class="modal-quote-btn" onclick="openRegionalQuote()">
+        <span>✉️</span> Request Regional Quote
+      </button>
+      <button type="button" class="close-button" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+</div>
+
+<section class="locpage-section">
+ <div class="container">
+
+ <div class="heading">
+ <h2>Our Global Presence</h2>
+ <p>We serve clients across 11 key international export markets worldwide.</p>
+ </div>
+
+ <div class="locpage-grid">
+
+      <a href="bangladesh/products.php" class="locpage-card" title="Explore Bangladesh Products">
+        <div class="locpage-icon">📍</div>
+        <h3 class="locpage-title">Bangladesh</h3>
+        <span class="locpage-explore">Explore Market &amp; Parts &rarr;</span>
+      </a>
+
+      <a href="nigeria/products.php" class="locpage-card" title="Explore Nigeria Products">
+        <div class="locpage-icon">📍</div>
+        <h3 class="locpage-title">Nigeria</h3>
+        <span class="locpage-explore">Explore Market &amp; Parts &rarr;</span>
+      </a>
+
+      <a href="nepal/products.php" class="locpage-card" title="Explore Nepal Products">
+        <div class="locpage-icon">📍</div>
+        <h3 class="locpage-title">Nepal</h3>
+        <span class="locpage-explore">Explore Market &amp; Parts &rarr;</span>
+      </a>
+
+      <a href="colombia/products.php" class="locpage-card" title="Explore Colombia Products">
+        <div class="locpage-icon">📍</div>
+        <h3 class="locpage-title">Colombia</h3>
+        <span class="locpage-explore">Explore Market &amp; Parts &rarr;</span>
+      </a>
+
+      <a href="srilanka/products.php" class="locpage-card" title="Explore Sri Lanka Products">
+        <div class="locpage-icon">📍</div>
+        <h3 class="locpage-title">Sri Lanka</h3>
+        <span class="locpage-explore">Explore Market &amp; Parts &rarr;</span>
+      </a>
+
+      <a href="egypt/products.php" class="locpage-card" title="Explore Egypt Products">
+        <div class="locpage-icon">📍</div>
+        <h3 class="locpage-title">Egypt</h3>
+        <span class="locpage-explore">Explore Market &amp; Parts &rarr;</span>
+      </a>
+
+      <a href="kenya/products.php" class="locpage-card" title="Explore Kenya Products">
+        <div class="locpage-icon">📍</div>
+        <h3 class="locpage-title">Kenya</h3>
+        <span class="locpage-explore">Explore Market &amp; Parts &rarr;</span>
+      </a>
+
+      <a href="uae/products.php" class="locpage-card" title="Explore UAE Products">
+        <div class="locpage-icon">📍</div>
+        <h3 class="locpage-title">UAE</h3>
+        <span class="locpage-explore">Explore Market &amp; Parts &rarr;</span>
+      </a>
+
+      <a href="mexico/products.php" class="locpage-card" title="Explore Mexico Products">
+        <div class="locpage-icon">📍</div>
+        <h3 class="locpage-title">Mexico</h3>
+        <span class="locpage-explore">Explore Market &amp; Parts &rarr;</span>
+      </a>
+
+      <a href="philippines/products.php" class="locpage-card" title="Explore Philippines Products">
+        <div class="locpage-icon">📍</div>
+        <h3 class="locpage-title">Philippines</h3>
+        <span class="locpage-explore">Explore Market &amp; Parts &rarr;</span>
+      </a>
+
+      <a href="vietnam/products.php" class="locpage-card" title="Explore Vietnam Products">
+        <div class="locpage-icon">📍</div>
+        <h3 class="locpage-title">Vietnam</h3>
+        <span class="locpage-explore">Explore Market &amp; Parts &rarr;</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<script>
+ // Data for the interactive pins with refined coordinates for clarity (11 Global Locations)
+ const locations = [
+ {
+ id: 'bangladesh',
+ name: 'Bangladesh',
+ details: 'High demand for two wheeler, three-wheeler clutch kits and spare parts.',
+ top: '42%',
+ left: '75.5%'
+ },
+ {
+ id: 'nigeria',
+ name: 'Nigeria',
+ details: 'Booming three-wheeler and motorcycle aftermarket components market.',
+ top: '52%',
+ left: '50%'
+ },
+ {
+ id: 'nepal',
+ name: 'Nepal',
+ details: 'Strong import demand for motorcycle clutch assemblies and engine parts.',
+ top: '38%',
+ left: '73.5%'
+ },
+ {
+ id: 'colombia',
+ name: 'Colombia',
+ details: 'High two wheeler population, imports parts for motorcycles and transport fleets.',
+ top: '52%',
+ left: '25%'
+ },
+ {
+ id: 'srilanka',
+ name: 'Sri Lanka',
+ details: 'Extensive three-wheeler auto-rickshaw parts and replacement component demand.',
+ top: '51%',
+ left: '73%'
+ },
+ {
+ id: 'egypt',
+ name: 'Egypt',
+ details: 'Key North African hub for motorcycle spares and three-wheeler parts.',
+ top: '39%',
+ left: '56.5%'
+ },
+ {
+ id: 'kenya',
+ name: 'Kenya',
+ details: 'Rapidly growing motorcycle and auto component distribution network.',
+ top: '56%',
+ left: '59.5%'
+ },
+ {
+ id: 'uae',
+ name: 'UAE (Dubai & Abu Dhabi)',
+ details: 'Central Gulf Hub: Major spare parts trading and automotive distribution centre.',
+ top: '45%',
+ left: '62.5%'
+ },
+ {
+ id: 'mexico',
+ name: 'Mexico',
+ details: 'Major Latin American manufacturing partner and automotive spare parts importer.',
+ top: '35%',
+ left: '18%'
+ },
+ {
+ id: 'philippines',
+ name: 'Philippines',
+ details: 'Vibrant tricycle and motorcycle parts market with continuous OEM-spec demand.',
+ top: '48%',
+ left: '84.5%'
+ },
+ {
+ id: 'vietnam',
+ name: 'Vietnam',
+ details: 'One of Southeast Asia\'s largest motorcycle markets for precision clutch components.',
+ top: '46%',
+ left: '79.5%'
+ }
+ ];
+
+ const mapContainer = document.getElementById('mapContainer');
+ const infoModal = document.getElementById('infoModal');
+ const modalTitle = document.getElementById('modalTitle');
+ const modalDetails = document.getElementById('modalDetails');
+ const hoverDisplay = document.getElementById('hoverDisplay');
+ const defaultHoverText = 'Hover over a pin to see details...';
+ // Get the initial colour for the hover display background (maroon with 0.9 alpha)
+ const defaultHoverColor = 'rgba(143, 0, 0, 0.9)';
+ const hoverPinColor = '#6b0000'; // The darker hover colour
+
+ // Function to create and place the map pins
+ function initializePins() {
+ locations.forEach(location => {
+ // 1. Create the Pin Element
+ const pin = document.createElement('div');
+ pin.classList.add('map-pin');
+ // Pin tops are relative to the uncropped map; rescale for the 20% bottom crop
+ pin.style.top = (parseFloat(location.top) / 0.8) + '%';
+ pin.style.left = location.left;
+ pin.textContent = '★';
+
+ // 2. Add click listener (opens the modal)
+ pin.addEventListener('click', () => showDetails(location));
+
+ // 3. Add mouseover listener (updates the top display bar)
+ pin.addEventListener('mouseover', () => {
+ hoverDisplay.innerHTML = `<span class="name">${location.name}</span> <span class="details">— ${location.details}</span>`;
+ hoverDisplay.style.backgroundColor = hoverPinColor; // Use the darker maroon on hover
+ });
+
+ // 4. Add mouseout listener (resets the top display bar)
+ pin.addEventListener('mouseout', () => {
+ hoverDisplay.innerHTML = defaultHoverText;
+ hoverDisplay.style.backgroundColor = defaultHoverColor;
+ });
+
+ // Append pin to the map container
+ mapContainer.appendChild(pin);
+ });
+ }
+
+ // Function to open location modal from card click
+  function openLocationModal(locId) {
+    const loc = locations.find(l => l.id === locId);
+    if (loc) {
+      showDetails(loc);
+    }
+  }
+
+  let currentLocationId = null;
+
+  // Function to show the modal with location details
+  function showDetails(location) {
+    currentLocationId = location.id;
+    modalTitle.innerHTML = `📍 ${location.name}`;
+    modalDetails.textContent = location.details;
+
+    const linksContainer = document.getElementById('modalProductLinks');
+    if (linksContainer) {
+      linksContainer.innerHTML = `
+        <div class="modal-prod-grid">
+          <a href="${location.id}/products.php" class="modal-prod-btn" title="All Products for ${location.name}">
+            <span class="modal-prod-icon">📦</span>
+            <div class="modal-prod-info">
+              <strong>All Products for ${location.name}</strong>
+              <span>Clutch, brake, engine &amp; die casting range</span>
+            </div>
+            <span class="modal-prod-arrow">&rarr;</span>
+          </a>
+          <a href="${location.id}/2-wheeler-inner-clutch-assembly.php" class="modal-prod-btn" title="Two Wheeler Parts &amp; Clutch Kits">
+            <span class="modal-prod-icon">🏍️</span>
+            <div class="modal-prod-info">
+              <strong>Two Wheeler Parts &amp; Clutch Kits</strong>
+              <span>Clutch plates, hub &amp; assembly for ${location.name}</span>
+            </div>
+            <span class="modal-prod-arrow">&rarr;</span>
+          </a>
+          <a href="${location.id}/3-wheeler-parts.php" class="modal-prod-btn" title="Three Wheeler Engine &amp; Spares">
+            <span class="modal-prod-icon">🛺</span>
+            <div class="modal-prod-info">
+              <strong>Three Wheeler Engine &amp; Spares</strong>
+              <span>Complete auto-rickshaw drive &amp; engine components</span>
+            </div>
+            <span class="modal-prod-arrow">&rarr;</span>
+          </a>
+          <a href="${location.id}/die-cast-clutch-housing-outer.php" class="modal-prod-btn" title="Die Casting &amp; OEM Housings">
+            <span class="modal-prod-icon">⚙️</span>
+            <div class="modal-prod-info">
+              <strong>Die Casting &amp; OEM Housings</strong>
+              <span>High-pressure aluminium die-cast components</span>
+            </div>
+            <span class="modal-prod-arrow">&rarr;</span>
+          </a>
+        </div>
+      `;
+    }
+
+    infoModal.classList.add('visible');
+    infoModal.style.display = 'flex';
+
+    // Prevent scroll on the body when modal is open
+    document.body.style.overflow = 'hidden';
+  }
+
+  function openRegionalQuote() {
+    closeModal();
+    if (typeof window.openEmailModal === 'function') {
+      window.openEmailModal();
+    } else {
+      window.location.href = 'contact-us.php';
+    }
+  }
+
+  // Function to close the modal
+  function closeModal() {
+    infoModal.classList.remove('visible');
+    setTimeout(() => {
+      infoModal.style.display = 'none';
+      document.body.style.overflow = '';
+    }, 300);
+  }
+
+  // Close modal when clicking outside the info card
+  infoModal.addEventListener('click', (event) => {
+    if (event.target === infoModal) {
+      closeModal();
+    }
+  });
+
+  // Close modal on Escape key
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && infoModal.classList.contains('visible')) {
+      closeModal();
+    }
+  });
+
+  // Initialize the pins and labels on page load
+  window.onload = initializePins;
+</script>
+

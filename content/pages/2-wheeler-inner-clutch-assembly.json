@@ -1,0 +1,77 @@
+{
+    "slug": "2-wheeler-inner-clutch-assembly",
+    "title": "Two Wheeler Inner Clutch Assembly Manufacturer | Autologic",
+    "description": "Autologic Industries is a two wheeler inner clutch assembly manufacturer, making smooth-shifting clutch packs for motorcycles and delivery bikes.",
+    "keyword": "Two Wheeler Inner Clutch Assembly Manufacturer, Two Wheeler Inner Clutch Assembly Supplier, Two Wheeler Inner Clutch Assembly Exporter, Two Wheeler Auto Parts Manufacturer, Two Wheeler Auto Parts Exporter, Two Wheeler Auto Parts Supplier, motorcycle clutch assembly manufacturer",
+    "productSchema": {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Two Wheeler Inner Clutch Assembly",
+        "image": [
+            "https://autologicindustries.com/img/products_hd/banner_2w_3w_clutch_pressure_plate.avif",
+            "https://autologicindustries.com/img/products_hd/product_clutch_plate_showcase.avif"
+        ],
+        "description": "Precision-engineered two wheeler inner clutch assemblies and auto parts for motorcycles and scooters. High thermal resistance, smooth torque transmission, and long service life.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Autologic Industries"
+        },
+        "manufacturer": {
+            "@type": "Organization",
+            "name": "Autologic Industries",
+            "url": "https://autologicindustries.com/"
+        },
+        "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://autologicindustries.com/2-wheeler-inner-clutch-assembly.php"
+        }
+    },
+    "faqSchema": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Who is a two wheeler inner clutch assembly manufacturer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Autologic Industries is a leading two wheeler inner clutch assembly manufacturer. Contact our team about specifications, availability and bulk orders."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How can I source two wheeler inner clutch assemblies in bulk?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Share quantities, models and part numbers; we confirm availability and terms."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I enquire about customised inner clutch assembly specifications?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We review custom drawings, friction materials, spline sizes and batch quantities for feasibility."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does Autologic Industries accept export enquiries?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. International buyers can discuss requirements, quantities and shipping with our export team."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What information is required for a quotation?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Provide the product name, vehicle model, part number, quantity and location."
+                }
+            }
+        ]
+    }
+}

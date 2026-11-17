@@ -1,0 +1,61 @@
+{
+    "slug": "3-wheeler-clutch-hub",
+    "title": "Three Wheeler Clutch Hub Manufacturer | Autologic Industries",
+    "description": "Autologic Industries is a premier manufacturer, supplier, and exporter of three wheeler clutch hub assemblies and auto rickshaw spare parts.",
+    "keyword": "Three Wheeler Clutch Hub Manufacturer, Three Wheeler Clutch Hub Supplier, Three Wheeler Clutch Hub Exporter, Auto Rickshaw Spare Parts Manufacturer, Three Wheeler Spare Parts Exporter, Three Wheeler Spare Parts Supplier, three wheeler clutch hub assembly",
+    "productSchema": {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Three Wheeler Clutch Hub",
+        "image": [
+            "https://autologicindustries.com/img/products_hd/banner_3w_parts.avif",
+            "https://autologicindustries.com/img/products_hd/3w_hub_center.avif"
+        ],
+        "description": "Precision-engineered three wheeler clutch hub assemblies and auto rickshaw spare parts. High spline tensile strength, vibration damping, and extended commercial durability.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Autologic Industries"
+        },
+        "manufacturer": {
+            "@type": "Organization",
+            "name": "Autologic Industries",
+            "url": "https://autologicindustries.com/"
+        },
+        "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://autologicindustries.com/3-wheeler-clutch-hub.php"
+        }
+    },
+    "faqSchema": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Who is a three wheeler clutch hub manufacturer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Autologic Industries is a three wheeler clutch hub manufacturer making precision hub assemblies for OEMs, fleet operators and aftermarket distributors."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How can I source auto rickshaw spare parts and clutch hubs in bulk?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Share your vehicle models (Bajaj, Piaggio, TVS, Atul, etc.), spline dimensions, part numbers, and estimated volume requirements with our engineering team for rapid commercial quotation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does Autologic Industries export three wheeler clutch hubs internationally?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We export three wheeler spare parts and clutch hub components globally with sea-worthy container packing, corrosion protection, and export customs clearance."
+                }
+            }
+        ]
+    }
+}

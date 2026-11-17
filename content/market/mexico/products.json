@@ -1,0 +1,126 @@
+{
+    "keyword": "auto parts supplier for Mexico",
+    "title": "Auto Parts Supplier for Mexico | Autologic Industries",
+    "description": "Autologic Industries is an auto parts supplier for Mexico, exporting motorcycle clutch parts, mototaxi spares and aluminium castings from India.",
+    "banner_desc": "Motorcycle, mototaxi and casting components exported from India for buyers in Mexico.",
+    "h1": [
+        "Motorcycle & Mototaxi Auto Parts Supplier",
+        "for Mexico"
+    ],
+    "hero_sub": "Clutch, Brake, Engine & Die Casting Parts",
+    "hero_alt": "Clutch assembly from the Autologic range for Mexican buyers",
+    "hero": [
+        "Autologic Industries is an IATF 16949 certified manufacturer in Delhi and an <strong>auto parts supplier for Mexico</strong>. We export clutch systems, brake shoes, engine components and aluminium castings to importers, distributors and assemblers.",
+        "Motorcycles are widely used in Mexico for commuting and deliveries, and three-wheeler mototaxis provide short trips in many towns. Our parts are built to OEM-grade tolerances for that kind of daily, high-mileage use. Browse the range below. Every component is tested in our plant before it is packed, and our team can help you plan an opening range."
+    ],
+    "categories": {
+        "2w": {
+            "title": [
+                "Motorcycle Parts",
+                "for Mexico"
+            ],
+            "intro": "Clutch components and spares for commuter and delivery motorcycles. Parts can be cross-referenced to your model list. Clutch parts are designed for the stop-start riding typical of delivery and city commuting."
+        },
+        "3w": {
+            "title": [
+                "Mototaxi Parts",
+                "for Mexico"
+            ],
+            "intro": "Clutch, brake and engine parts for passenger and cargo three-wheelers making frequent short trips. Assemblies and brake shoes are designed for frequent short trips with passengers on board."
+        },
+        "diecast": {
+            "title": [
+                "Die Casting & Machining",
+                "for Mexico"
+            ],
+            "intro": "Aluminium castings and CNC-machined components for assemblers and component brands, produced to your drawings. Engineering support helps turn your drawings into production-ready castings."
+        }
+    },
+    "cards": {
+        "2-wheeler-auto-parts": "Clutch and drivetrain parts for motorcycles and scooters.",
+        "2-wheeler-inner-clutch-assembly": "Matched clutch packs for complete overhauls.",
+        "2-wheeler-clutch-hub": "Hubs with accurate splines and alloy bodies.",
+        "2-wheeler-clutch-outer-housing": "High-pressure die-cast, balanced housings.",
+        "2-wheeler-clutch-plate": "Non-asbestos plates with a steel core.",
+        "2-wheeler-pressure-plate": "Plates ground flat within 0.05 mm TIR.",
+        "motorcycle-spare-parts": "Spares for distributors covering many models.",
+        "bike-engine-components": "OEM-tolerance engine components.",
+        "3-wheeler-parts": "A full spares range for mototaxis and cargo models.",
+        "3-wheeler-inner-clutch-assembly": "Heavy-duty clutch packs tested on a dynamometer.",
+        "3-wheeler-clutch-hub": "Induction-hardened hubs with low runout.",
+        "3-wheeler-drum-brake-shoes": "Brake shoes made for frequent stopping.",
+        "3-wheeler-clutch-housing": "High-tensile alloy clutch housings.",
+        "3-wheeler-clutch-plate": "Plates that resist slip with full loads.",
+        "3-wheeler-pressure-plate": "Pressure plates that resist heat warping.",
+        "3-wheeler-engine-parts": "Durable, efficient engine parts.",
+        "die-cast-clutch-housing-outer": "Aluminium housings for OEM and aftermarket use.",
+        "customized-die-casting-solution": "Custom castings for your designs.",
+        "cnc-machined-engine-components": "Repeatable CNC precision for engine parts.",
+        "high-volume-production-castings": "Castings for production programmes.",
+        "aluminium-die-casting": "High-pressure aluminium die castings with in-house machining.",
+        "precision-die-casting-parts": "Precision castings needing little machining."
+    },
+    "network": [
+        {
+            "title": "Why Mexican Buyers Source From Us",
+            "paras": [
+                "With more than 25 years of drivetrain manufacturing and IATF 16949 certification, we test every component before dispatch.",
+                "One supplier for clutch, brake and casting lines simplifies ordering and keeps quality consistent.",
+                "We can work from your existing part numbers and samples, which helps you add our parts to your catalogue quickly."
+            ],
+            "list": [
+                "IATF 16949 certified production",
+                "Model-wise part mapping",
+                "Wholesale and OEM pricing"
+            ]
+        },
+        {
+            "title": "Shipping Parts to Mexico",
+            "paras": [
+                "Orders travel by sea in palletised export packing to the Mexican port you choose, with complete documents for your customs broker.",
+                "Motorcycle, mototaxi and casting items can share a container, and repeat shipments can be scheduled.",
+                "Cartons can carry your brand and part numbers for distributors who sell through several stores."
+            ],
+            "list": [
+                "FCL and LCL consignments",
+                "Private label packaging",
+                "Samples before volume orders"
+            ]
+        }
+    ],
+    "cta": {
+        "title": "Sourcing parts for the Mexican market?",
+        "text": "Share your part list, models or drawings with quantities. Our export team will confirm fitment and send a quotation for delivery to Mexico. Samples can be arranged before your first volume order, so you can check fit on local models."
+    },
+    "faq_intro": "Quick answers for importers, distributors and assemblers in Mexico. Our export team replies to enquiries with fitment notes, packing details and clear commercial terms.",
+    "faqs": [
+        [
+            "Do you supply motorcycle and mototaxi parts to Mexico?",
+            "Yes. Our range covers two and three wheeler clutch parts, brake shoes, engine components and aluminium castings."
+        ],
+        [
+            "Can I combine product lines in one shipment?",
+            "Yes. We combine different parts in one consignment and label cartons by model."
+        ],
+        [
+            "Can you make parts to our drawings?",
+            "Yes. Our die casting and CNC lines produce components from drawings or samples after a feasibility review."
+        ],
+        [
+            "Can I order samples first?",
+            "Yes. Samples let you confirm fit and finish before volume orders."
+        ],
+        [
+            "Do your clutch plates resist heat?",
+            "Yes. Our two wheeler friction plates use a non-asbestos compound rated for up to 300°C peak continuous endurance."
+        ],
+        [
+            "Can you support an assembly programme?",
+            "Yes. Our casting and machining lines can supply drawing-based parts on a planned delivery schedule."
+        ],
+        [
+            "How are consignments documented for Mexico?",
+            "Each shipment includes the commercial invoice, packing list and other export documents your customs broker requests."
+        ]
+    ]
+}

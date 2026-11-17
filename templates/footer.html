@@ -1,0 +1,241 @@
+﻿<style>
+ /* ── Footer ── */.site-footer {
+ background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+ color: #ccc;
+ font-family: 'Poppins', sans-serif;
+ padding: 50px 0 0;
+ }.footer-content {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 24px;
+ display: grid;
+ grid-template-columns: 1.4fr 0.9fr 1.2fr 1.5fr;
+ gap: 40px;
+ }.footer-column h3 {
+ color: #fff;
+ font-size: 1rem;
+ font-weight: 700;
+ margin-bottom: 18px;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ position: relative;
+ padding-bottom: 10px;
+ }.footer-column h3::after {
+ content: '';
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ width: 30px;
+ height: 3px;
+ background: #8f0000;
+ border-radius: 2px;
+ }.footer-column p {
+ font-size: 0.88rem;
+ line-height: 1.7;
+ color: #aaa;
+ margin: 0 0 10px;
+ }.footer-column ul {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+ }.footer-column ul li {
+ margin-bottom: 10px;
+ }.footer-column ul li a {
+ color: #aaa;
+ text-decoration: none;
+ font-size: 0.88rem;
+ transition: color 0.2s, padding-left 0.2s;
+ display: flex;
+ align-items: center;
+ gap: 6px;
+ }.footer-column ul li a::before {
+ content: '›';
+ color: #8f0000;
+ font-weight: 700;
+ font-size: 1rem;
+ }.footer-column ul li a:hover {
+ color: #fff;
+ padding-left: 4px;
+ }
+ /* Contact info items */.footer-contact-item {
+ display: flex;
+ align-items: flex-start;
+ gap: 10px;
+ margin-bottom: 12px;
+ font-size: 0.86rem;
+ color: #aaa;
+ line-height: 1.5;
+ }.footer-contact-item.icon {
+ font-size: 1rem;
+ flex-shrink: 0;
+ margin-top: 2px;
+ }.footer-contact-item a {
+ color: #aaa;
+ text-decoration: none;
+ transition: color 0.2s;
+ }.footer-contact-item a:hover { color: #fff; }.footer-phone-col {
+ display: flex;
+ flex-direction: column;
+ gap: 4px;
+ }.footer-phone-col a {
+ font-family: 'Segoe UI', Roboto, -apple-system, BlinkMacSystemFont, sans-serif;
+ font-variant-numeric: tabular-nums;
+ font-feature-settings: 'tnum';
+ letter-spacing: 0.4px;
+ white-space: nowrap;
+ display: block;
+ line-height: 1.4;
+ color: #aaa;
+ }.footer-phone-col a:hover { color: #fff; }
+
+ /* Social Icons */.footer-social {
+ display: flex;
+ gap: 10px;
+ margin-top: 16px;
+ flex-wrap: wrap;
+ }.footer-social a {
+ width: 38px;
+ height: 38px;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 0.95rem;
+ color: #fff;
+ text-decoration: none;
+ transition: transform 0.2s, opacity 0.2s;
+ flex-shrink: 0;
+ }.footer-social a:hover { transform: scale(1.15); opacity: 0.85; }.footer-social.fs-wa { background: #25D366; }.footer-social.fs-fb { background: #1877F2; }.footer-social.fs-ig { background: linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); }.footer-social.fs-li { background: #0A66C2; }.footer-social.fs-yt { background: #FF0000; }
+
+ /* Footer Brand */.footer-brand {
+ font-size: 1.2rem;
+ font-weight: 800;
+ color: #fff;
+ margin-bottom: 12px;
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ }.footer-brand img {
+ height: 42px;
+ object-fit: contain;
+ filter: brightness(0) invert(1);
+ }
+
+ /* Divider */.footer-divider {
+ max-width: 1200px;
+ margin: 40px auto 0;
+ padding: 0 24px;
+ border-top: 1px solid rgba(255,255,255,0.08);
+ }
+
+ /* Footer Bottom */.footer-bottom {
+ padding: 16px 24px;
+ text-align: center;
+ font-size: 0.8rem;
+ color: #888;
+ max-width: 1200px;
+ margin: 0 auto;
+ }.footer-bottom a {
+ color: #8f0000;
+ font-weight: 600;
+ text-decoration: none;
+ }.footer-bottom a:hover { text-decoration: underline; }
+
+ @media (max-width: 900px) {.footer-content { grid-template-columns: 1fr 1fr; gap: 30px; }
+ }
+ @media (max-width: 560px) {.footer-content { grid-template-columns: 1fr; gap: 24px; }
+ }
+</style>
+
+<footer class="site-footer">
+ <div class="footer-content">
+
+ <!-- Column 1: Brand -->
+ <div class="footer-column">
+ <div class="footer-brand">
+ <img src="%%BASE%%img/logo.avif" alt="Autologic Industries Logo" title="Autologic Industries Logo">
+ </div>
+ <p>Leading manufacturer and supplier of two wheeler & three-wheeler auto parts. Trusted OEM supplier for clutch kits, die casting, engine components and more.</p>
+ <div class="footer-social">
+ <a href="#" onclick="openWhatsAppModal();return false;" class="fs-wa" title="WhatsApp">
+ <i class="fab fa-whatsapp"></i>
+ </a>
+ <a href="https://www.facebook.com/autologicindustries" target="_blank" class="fs-fb" title="Facebook">
+ <i class="fab fa-facebook-f"></i>
+ </a>
+ <a href="https://www.instagram.com/autologicindustries" target="_blank" class="fs-ig" title="Instagram">
+ <i class="fab fa-instagram"></i>
+ </a>
+ <a href="https://www.linkedin.com/company/autologicindustries" target="_blank" class="fs-li" title="LinkedIn">
+ <i class="fab fa-linkedin-in"></i>
+ </a>
+ <a href="https://www.youtube.com/@autologicindustries" target="_blank" class="fs-yt" title="YouTube">
+ <i class="fab fa-youtube"></i>
+ </a>
+ </div>
+ </div>
+
+ <!-- Column 2: Quick Links -->
+ <div class="footer-column">
+ <h3>Quick Links</h3>
+ <ul>
+ <li><a href="%%BASE%%index.php" title="Home">Home</a></li>
+ <li><a href="%%BASE%%about-us.php" title="About Us">About Us</a></li>
+ <li><a href="%%PROD_BASE%%2-wheeler-clutch-outer-housing.php" title="2-Wheeler Parts">2-Wheeler Parts</a></li>
+ <li><a href="%%PROD_BASE%%3-wheeler-parts.php" title="3-Wheeler Parts">3-Wheeler Parts</a></li>
+ <li><a href="%%PROD_BASE%%die-cast-clutch-housing-outer.php" title="Die Casting">Die Casting</a></li>
+ <li><a href="%%BASE%%location.php" title="Global Reach">Global Reach</a></li>
+ <li><a href="%%BASE%%contact-us.php" title="Contact Us">Contact Us</a></li>
+ </ul>
+ </div>
+
+ <!-- Column 3: Products -->
+  <div class="footer-column">
+ <h3>Our Products</h3>
+ <ul>
+ <li><a href="%%FOOTER_PROD:2-wheeler-inner-clutch-assembly%%" title="Clutch &amp; Pressure Plate">Clutch &amp; Pressure Plate</a></li>
+ <li><a href="%%FOOTER_PROD:2-wheeler-clutch-hub%%" title="Clutch Kit">Clutch Kit</a></li>
+ <li><a href="%%FOOTER_PROD:motorcycle-spare-parts%%" title="Motorcycle Spare Parts">Motorcycle Spare Parts</a></li>
+ <li><a href="%%FOOTER_PROD:bike-engine-components%%" title="Bike Engine Components">Bike Engine Components</a></li>
+ <li><a href="%%FOOTER_PROD:precision-die-casting-parts%%" title="Precision Die Casting">Precision Die Casting</a></li>
+ <li><a href="%%FOOTER_PROD:customized-die-casting-solution%%" title="Custom Die Casting">Custom Die Casting</a></li>
+ <li><a href="%%FOOTER_PROD:3-wheeler-engine-parts%%" title="Engine Parts (3W)">Engine Parts (3W)</a></li>
+ </ul>
+ </div>
+
+ <!-- Column 4: Contact -->
+ <div class="footer-column">
+ <h3>Contact Us</h3>
+ <div class="footer-contact-item">
+ <span class="icon">📞</span>
+ <div class="footer-phone-col">
+ <a href="tel:+919999985012" title="Call +91 99999 85012">+91 99999 85012</a>
+ <a href="tel:+919911154216" title="Call +91 99111 54216">+91 99111 54216</a>
+ </div>
+ </div>
+ <div class="footer-contact-item">
+ <span class="icon">📧</span>
+ <a href="#" onclick="openEmailModal();return false;" title="info@autologicindustries.com">info@autologicindustries.com</a>
+ </div>
+ <div class="footer-contact-item">
+ <span class="icon">📍</span>
+ <span>Kh 52/13, Prahlad Pur,<br>Industrial Area, Bawana Road,<br>Delhi-110042</span>
+ </div>
+ <div class="footer-contact-item">
+ <span class="icon">🕐</span>
+ <span>Mon–Sat: 9:00 AM – 6:00 PM</span>
+ </div>
+ </div>
+
+ </div>
+
+ <div class="footer-divider"></div>
+ <div class="footer-bottom">
+ &copy; 2025 Autologic Industries &mdash; Designed &amp; Managed by
+ <a href="https://promopact.in/" target="_blank" title="Promopact Marketing India Pvt. Ltd.">Promopact Marketing India Pvt. Ltd.</a>
+ All Rights Reserved.
+ </div>
+</footer>
+
+</body>
+</html>

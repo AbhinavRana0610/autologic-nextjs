@@ -1,0 +1,61 @@
+{
+    "slug": "2-wheeler-clutch-hub",
+    "title": "Two Wheeler Clutch Hub Manufacturer | Autologic Industries",
+    "description": "Autologic Industries is a premier manufacturer, supplier, and exporter of two wheeler clutch hub assemblies and motorcycle spare parts.",
+    "keyword": "Two Wheeler Clutch Hub Manufacturer, Clutch Hub Supplier, Clutch Hub Exporter, Motorcycle Spare Parts Manufacturer, Motorcycle Spare Parts Exporter, Motorcycle Spare Parts Supplier, two wheeler clutch hub assembly",
+    "productSchema": {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Two Wheeler Clutch Hub",
+        "image": [
+            "https://autologicindustries.com/img/products_hd/banner_2w_3w_clutch_kit.avif",
+            "https://autologicindustries.com/img/products_hd/2w_hub_spline.avif"
+        ],
+        "description": "Precision-engineered two wheeler clutch hub assemblies and motorcycle spare parts. High spline tensile strength, vibration damping, and extended durability.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Autologic Industries"
+        },
+        "manufacturer": {
+            "@type": "Organization",
+            "name": "Autologic Industries",
+            "url": "https://autologicindustries.com/"
+        },
+        "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://autologicindustries.com/2-wheeler-clutch-hub.php"
+        }
+    },
+    "faqSchema": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Who is a two wheeler clutch hub manufacturer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Autologic Industries is a two wheeler clutch hub manufacturer making precision hub assemblies for OEMs and aftermarket distributors from high-grade alloys."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How can I source motorcycle spare parts and clutch hubs in bulk?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Share your vehicle models, spline dimensions, part numbers, and estimated volume requirements with our engineering team for rapid commercial quotation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does Autologic Industries export motorcycle spare parts internationally?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We export motorcycle spare parts and clutch hub components globally with sea-worthy container packing, export clearance, and international compliance."
+                }
+            }
+        ]
+    }
+}

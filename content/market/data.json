@@ -1,0 +1,1609 @@
+{
+    "siteUrl": "https://autologicindustries.com/",
+    "imgNc": "?v=20261005_nocut",
+    "imgBb": "?v=20261005_bigbanner",
+    "markets": {
+        "bangladesh": {
+            "name": "Bangladesh"
+        },
+        "nigeria": {
+            "name": "Nigeria"
+        },
+        "nepal": {
+            "name": "Nepal"
+        },
+        "colombia": {
+            "name": "Colombia"
+        },
+        "srilanka": {
+            "name": "Sri Lanka"
+        },
+        "egypt": {
+            "name": "Egypt"
+        },
+        "kenya": {
+            "name": "Kenya"
+        },
+        "uae": {
+            "name": "UAE"
+        },
+        "mexico": {
+            "name": "Mexico"
+        },
+        "philippines": {
+            "name": "Philippines"
+        },
+        "vietnam": {
+            "name": "Vietnam"
+        }
+    },
+    "products": {
+        "2-wheeler-auto-parts": {
+            "cat": "2w",
+            "section_of": "2-wheeler-inner-clutch-assembly",
+            "name": "Two Wheeler Auto Parts",
+            "label": "Two Wheeler Auto Parts",
+            "hero": "2w_assembly_1.avif?v=20261005_nocut"
+        },
+        "2-wheeler-inner-clutch-assembly": {
+            "cat": "2w",
+            "name": "Two Wheeler Inner Clutch Assembly",
+            "label": "Inner Clutch Assembly",
+            "banner": "banner_2w_3w_clutch_pressure_plate.avif?v=20261005_bigbanner",
+            "hero": "2w_clutch_pack.avif?v=20261005_nocut",
+            "spec_img": "2w_hub_spline.avif?v=20261005_nocut",
+            "cards": [
+                "clutch_housing_outer.avif?v=20261005_nocut",
+                "2w_assembly_1.avif?v=20261005_nocut",
+                "2w_hub_center.avif?v=20261005_nocut",
+                "2w_clutch_assembly.avif?v=20261005_nocut"
+            ],
+            "specs": [
+                [
+                    "Product Category",
+                    "Two Wheeler Inner Clutch Assembly",
+                    true
+                ],
+                [
+                    "Applications",
+                    "Compatible motorcycles and scooters",
+                    false
+                ],
+                [
+                    "Product Requirements",
+                    "Model-specific or specification-based",
+                    false
+                ],
+                [
+                    "Material",
+                    "As per applicable product specification",
+                    false
+                ],
+                [
+                    "Order Quantity",
+                    "Retail, bulk, or project-based enquiries",
+                    false
+                ],
+                [
+                    "Custom Specifications",
+                    "Reviewed according to technical feasibility",
+                    false
+                ],
+                [
+                    "Quality Benchmark",
+                    "OEM Grade Precision & 100% Quality Tested",
+                    true
+                ]
+            ],
+            "related": [
+                "2-wheeler-clutch-plate",
+                "2-wheeler-clutch-outer-housing",
+                "2-wheeler-clutch-hub",
+                "2-wheeler-pressure-plate",
+                "motorcycle-spare-parts",
+                "bike-engine-components"
+            ]
+        },
+        "2-wheeler-clutch-hub": {
+            "cat": "2w",
+            "name": "Two Wheeler Clutch Hub",
+            "label": "Clutch Hub",
+            "banner": "banner_2w_3w_clutch_kit.avif?v=20261005_bigbanner",
+            "hero": "2w_hub_spline.avif?v=20261005_nocut",
+            "spec_img": "2w_hub_spline.avif?v=20261005_nocut",
+            "cards": [
+                "2w_hub_spline.avif?v=20261005_nocut",
+                "2w_hub_center.avif?v=20261005_nocut",
+                "2w_assembly_1.avif?v=20261005_nocut",
+                "2w_clutch_assembly.avif?v=20261005_nocut"
+            ],
+            "specs": [
+                [
+                    "Product Classification",
+                    "Two Wheeler Clutch Hub",
+                    true
+                ],
+                [
+                    "Quality Benchmark",
+                    "OEM Grade Precision",
+                    true
+                ],
+                [
+                    "Material Grade",
+                    "High-Tensile Aluminium / Case-Hardened Alloy",
+                    true
+                ],
+                [
+                    "Spline Machining",
+                    "Multi-Axis Broached / CNC Hobbed",
+                    false
+                ],
+                [
+                    "Surface Treatment",
+                    "Hard Anodised / Anti-Corrosion Phosphate",
+                    false
+                ],
+                [
+                    "Supply Capability",
+                    "Bulk & Custom OEM Orders",
+                    true
+                ]
+            ],
+            "related": [
+                "2-wheeler-inner-clutch-assembly",
+                "2-wheeler-clutch-outer-housing",
+                "2-wheeler-clutch-plate",
+                "2-wheeler-pressure-plate",
+                "motorcycle-spare-parts",
+                "bike-engine-components"
+            ]
+        },
+        "2-wheeler-clutch-outer-housing": {
+            "cat": "2w",
+            "name": "Two Wheeler Clutch Outer Housing",
+            "label": "Clutch Outer Housing",
+            "banner": "twin_clutch_plates_banner.avif?v=20261005_bigbanner",
+            "hero": "clutch_housing_outer_angled.avif?v=20261005_angled",
+            "spec_img": "clutch_housing_outer_angled.avif?v=20261005_angled",
+            "cards": [
+                "clutch_housing_outer.avif?v=20261005_nocut",
+                "clutch_housing_outer_angled.avif?v=20261005_angled",
+                "2w_clutch_assembly.avif?v=20261005_nocut",
+                "2w_hub_spline.avif?v=20261005_nocut"
+            ],
+            "specs": [
+                [
+                    "Product Classification",
+                    "Clutch Outer Housing (Bell Housing)",
+                    true
+                ],
+                [
+                    "Quality Benchmark",
+                    "OEM Grade Precision",
+                    true
+                ],
+                [
+                    "Manufacturing Process",
+                    "High-Pressure Aluminium Die Casting",
+                    true
+                ],
+                [
+                    "Machining Accuracy",
+                    "CNC Machined Face & Broached Inner Grooves",
+                    false
+                ],
+                [
+                    "Dynamic Balancing",
+                    "100% High-RPM Dynamic Balancing Inspected",
+                    false
+                ],
+                [
+                    "Supply Capability",
+                    "Bulk & Custom OEM Orders",
+                    true
+                ]
+            ],
+            "related": [
+                "2-wheeler-inner-clutch-assembly",
+                "2-wheeler-clutch-hub",
+                "2-wheeler-clutch-plate",
+                "2-wheeler-pressure-plate",
+                "die-cast-clutch-housing-outer",
+                "precision-die-casting-parts"
+            ]
+        },
+        "2-wheeler-clutch-plate": {
+            "cat": "2w",
+            "no_caps": true,
+            "name": "Two Wheeler Friction Clutch Plate",
+            "label": "Friction Clutch Plates",
+            "banner": "banner_2w_clutch_plate.avif?v=20261005_bigbanner",
+            "hero": "2w_clutch_pack.avif?v=20261005_nocut",
+            "spec_img": "2w_clutch_pack.avif?v=20261005_nocut",
+            "cards": [
+                "2w_clutch_pack.avif?v=20261005_nocut",
+                "2w_assembly_1.avif?v=20261005_nocut",
+                "2w_hub_center.avif?v=20261005_nocut",
+                "2w_clutch_assembly.avif?v=20261005_nocut"
+            ],
+            "specs": [
+                [
+                    "Product Classification",
+                    "Friction Clutch Plate (Drive Disc)",
+                    true
+                ],
+                [
+                    "Quality Benchmark",
+                    "OEM Grade Precision",
+                    true
+                ],
+                [
+                    "Friction Material",
+                    "100% Non-Asbestos Composite / Cellulose Matrix",
+                    true
+                ],
+                [
+                    "Core Plate Base",
+                    "Cold Rolled High-Tensile Steel",
+                    false
+                ],
+                [
+                    "Thermal Resistance",
+                    "Up to 300°C Peak Continuous Endurance",
+                    false
+                ],
+                [
+                    "Supply Capability",
+                    "Bulk & Custom OEM Orders",
+                    true
+                ]
+            ],
+            "related": [
+                "2-wheeler-pressure-plate",
+                "2-wheeler-inner-clutch-assembly",
+                "2-wheeler-clutch-hub",
+                "2-wheeler-clutch-outer-housing",
+                "motorcycle-spare-parts",
+                "3-wheeler-clutch-plate"
+            ]
+        },
+        "2-wheeler-pressure-plate": {
+            "cat": "2w",
+            "no_caps": true,
+            "name": "Two Wheeler Clutch Pressure Plate",
+            "label": "Clutch Pressure Plates",
+            "banner": "banner_2w_pressure_plate.avif?v=20261005_bigbanner",
+            "hero": "2w_clutch_assembly_alt.avif?v=20261005_bigspecimg",
+            "spec_img": "2w_clutch_assembly_alt.avif?v=20261005_bigspecimg",
+            "cards": [
+                "2w_clutch_assembly_alt.avif?v=20261005_bigspecimg",
+                "2w_hub_center.avif?v=20261005_nocut",
+                "2w_clutch_pack.avif?v=20261005_nocut",
+                "2w_clutch_assembly.avif?v=20261005_nocut"
+            ],
+            "specs": [
+                [
+                    "Product Classification",
+                    "Clutch Pressure Plate",
+                    true
+                ],
+                [
+                    "Quality Benchmark",
+                    "OEM Grade Precision",
+                    true
+                ],
+                [
+                    "Material Grade",
+                    "High-Tensile Cold Rolled Steel / Cast Alloy",
+                    true
+                ],
+                [
+                    "Surface Finishing",
+                    "Double-Disc Precision Ground Flatness",
+                    false
+                ],
+                [
+                    "Flatness Tolerance",
+                    "Within 0.05 mm Total Indicator Reading",
+                    false
+                ],
+                [
+                    "Supply Capability",
+                    "Bulk & Custom OEM Orders",
+                    true
+                ]
+            ],
+            "related": [
+                "2-wheeler-clutch-plate",
+                "2-wheeler-inner-clutch-assembly",
+                "2-wheeler-clutch-hub",
+                "2-wheeler-clutch-outer-housing",
+                "motorcycle-spare-parts",
+                "3-wheeler-pressure-plate"
+            ]
+        },
+        "motorcycle-spare-parts": {
+            "cat": "2w",
+            "no_manufacturing": true,
+            "no_caps": true,
+            "section_of": "2-wheeler-clutch-outer-housing",
+            "name": "Motorcycle Spare Parts",
+            "label": "Motorcycle Spare Parts",
+            "banner": "banner_motorcycle_spare_parts.avif?v=20261005_bigbanner",
+            "hero": "2w_hub_center_alt.avif?v=20261005_nocut",
+            "spec_img": "2w_hub_spline.avif?v=20261005_nocut",
+            "cards": [
+                "clutch_housing_outer.avif?v=20261005_nocut",
+                "2w_clutch_pack.avif?v=20261005_nocut",
+                "2w_hub_center.avif?v=20261005_nocut",
+                "2w_clutch_assembly.avif?v=20261005_nocut"
+            ],
+            "specs": [
+                [
+                    "Quality Benchmark",
+                    "OEM Grade Precision",
+                    true
+                ],
+                [
+                    "Material Grade",
+                    "High-Tensile Certified Alloy",
+                    true
+                ],
+                [
+                    "Supply Capability",
+                    "Bulk & Custom Orders",
+                    true
+                ],
+                [
+                    "Extensive Selection",
+                    "Large product selection that includes several motorcycle models.",
+                    false
+                ],
+                [
+                    "Quality Control",
+                    "Regular quality control for robustness and security.",
+                    false
+                ],
+                [
+                    "Expert Support",
+                    "A knowledgeable support staff will help you choose the appropriate parts.",
+                    false
+                ]
+            ],
+            "related": [
+                "bike-engine-components",
+                "2-wheeler-clutch-plate",
+                "2-wheeler-pressure-plate",
+                "2-wheeler-clutch-outer-housing",
+                "2-wheeler-clutch-hub",
+                "2-wheeler-inner-clutch-assembly"
+            ]
+        },
+        "bike-engine-components": {
+            "cat": "2w",
+            "no_manufacturing": true,
+            "no_caps": true,
+            "section_of": "2-wheeler-clutch-hub",
+            "name": "Bike Engine Components",
+            "label": "Bike Engine Components",
+            "banner": "banner_bike_engine_components.avif?v=20261005_bigbanner",
+            "hero": "clutch_housing_cast.avif?v=20261005_nocut",
+            "spec_img": "clutch_housing_profile.avif?v=20261005_nocut",
+            "cards": [
+                "clutch_housing_outer.avif?v=20261005_nocut",
+                "2w_clutch_pack.avif?v=20261005_nocut",
+                "2w_hub_center.avif?v=20261005_nocut",
+                "2w_clutch_assembly.avif?v=20261005_nocut"
+            ],
+            "specs": [
+                [
+                    "Quality Benchmark",
+                    "OEM Grade Precision",
+                    true
+                ],
+                [
+                    "Material Grade",
+                    "High-Tensile Certified Alloy",
+                    true
+                ],
+                [
+                    "Supply Capability",
+                    "Bulk & Custom Orders",
+                    true
+                ],
+                [
+                    "Durability That Delivers",
+                    "Long lifespan and optimal performance thanks to precise engineering.",
+                    false
+                ],
+                [
+                    "Universal Compatibility",
+                    "Widely usable, compatible with various bike models.",
+                    false
+                ],
+                [
+                    "Uncompromising Quality Control",
+                    "Rigorous quality assurance at each stage of production.",
+                    false
+                ]
+            ],
+            "related": [
+                "motorcycle-spare-parts",
+                "2-wheeler-clutch-outer-housing",
+                "2-wheeler-clutch-hub",
+                "2-wheeler-clutch-plate",
+                "cnc-machined-engine-components",
+                "precision-die-casting-parts"
+            ]
+        },
+        "3-wheeler-parts": {
+            "cat": "3w",
+            "name": "Three Wheeler Parts",
+            "label": "Three Wheeler Parts",
+            "card_name": "Three Wheeler Auto Parts",
+            "banner": "banner_3w_parts.avif?v=20261005_bigbanner",
+            "hero": "3w_hub_center.avif?v=20261005_nocut",
+            "spec_img": "3w_hub_center_alt.avif?v=20261005_nocut",
+            "cards": [
+                "3w_heavy_duty_assembly_alt.avif?v=20261005_nocut",
+                "3w_heavy_duty_assembly.avif?v=20261005_nocut",
+                "2w_hub_spline.avif?v=20261005_nocut",
+                "clutch_housing_profile.avif?v=20261005_nocut"
+            ],
+            "specs": [
+                [
+                    "Quality Benchmark",
+                    "OEM Grade Precision",
+                    true
+                ],
+                [
+                    "Material Grade",
+                    "High-Tensile Certified Alloy",
+                    true
+                ],
+                [
+                    "Supply Capability",
+                    "Bulk & Custom Orders",
+                    true
+                ],
+                [
+                    "Precision Engineering for Seamless Performance",
+                    "Vehicles with precisely engineered designs operate smoothly.",
+                    false
+                ],
+                [
+                    "Comprehensive Range of Components",
+                    "An extensive product line that includes body, suspension, engine, and transmission components.",
+                    false
+                ],
+                [
+                    "Universal Compatibility & Easy Installation",
+                    "Compatibility with various three-wheeler models and ease of installation.",
+                    false
+                ]
+            ],
+            "related": [
+                "3-wheeler-inner-clutch-assembly",
+                "3-wheeler-clutch-hub",
+                "3-wheeler-drum-brake-shoes",
+                "3-wheeler-clutch-housing",
+                "3-wheeler-clutch-plate",
+                "3-wheeler-engine-parts"
+            ]
+        },
+        "3-wheeler-inner-clutch-assembly": {
+            "cat": "3w",
+            "name": "Three Wheeler Inner Clutch Assembly",
+            "label": "Inner Clutch Assembly",
+            "banner": "banner_3w_parts.avif?v=20261005_bigbanner",
+            "hero": "3w_heavy_duty_assembly.avif?v=20261005_nocut",
+            "spec_img": "3w_hub_center.avif?v=20261005_nocut",
+            "cards": [
+                "3w_assembly_1.avif?v=20261005_nocut",
+                "3w_commercial_assembly.avif?v=20261005_nocut",
+                "3w_hub_center_alt.avif?v=20261005_nocut",
+                "3w_heavy_duty_assembly_alt.avif?v=20261005_nocut"
+            ],
+            "specs": [
+                [
+                    "Product Category",
+                    "Three Wheeler Inner Clutch Assembly",
+                    true
+                ],
+                [
+                    "Applications",
+                    "Auto rickshaws, passenger 3-wheelers, and commercial cargo loaders",
+                    false
+                ],
+                [
+                    "Compatible Brands",
+                    "Bajaj RE / Maxima, Piaggio Ape, TVS King, Atul Auto, Mahindra Alfa, etc.",
+                    false
+                ],
+                [
+                    "Material Grade",
+                    "High-Tensile Heavy Alloy Steel & Friction Compound",
+                    true
+                ],
+                [
+                    "Thermal Capacity",
+                    "Continuous thermal endurance up to 300°C without friction fade",
+                    false
+                ],
+                [
+                    "Torsional Damping",
+                    "Heavy-gauge coil springs for shock absorption and smooth bite",
+                    false
+                ],
+                [
+                    "Supply Capability",
+                    "Wholesale Bulk & Custom OEM Orders",
+                    true
+                ],
+                [
+                    "Quality Benchmark",
+                    "OEM Grade Precision & 100% Dynamometer Tested",
+                    true
+                ]
+            ],
+            "related": [
+                "3-wheeler-clutch-hub",
+                "3-wheeler-clutch-plate",
+                "3-wheeler-pressure-plate",
+                "3-wheeler-clutch-housing",
+                "3-wheeler-drum-brake-shoes",
+                "3-wheeler-parts"
+            ]
+        },
+        "3-wheeler-clutch-hub": {
+            "cat": "3w",
+            "no_reach": true,
+            "name": "Three Wheeler Clutch Hub",
+            "label": "Clutch Hub",
+            "banner": "banner_3w_parts.avif?v=20261005_bigbanner",
+            "hero": "3w_hub_center.avif?v=20261005_nocut",
+            "spec_img": "3w_hub_center_alt.avif?v=20261005_nocut",
+            "cards": [
+                "3w_hub_center.avif?v=20261005_nocut",
+                "3w_commercial_assembly.avif?v=20261005_nocut",
+                "3w_heavy_duty_assembly.avif?v=20261005_nocut",
+                "3w_assembly_1.avif?v=20261005_nocut"
+            ],
+            "specs": [
+                [
+                    "Product Category",
+                    "Three Wheeler Clutch Hub",
+                    true
+                ],
+                [
+                    "Vehicle Segment",
+                    "Auto Rickshaws, Cargo 3-Wheelers, Passenger Three-Wheelers",
+                    false
+                ],
+                [
+                    "Spline Machining",
+                    "Precision Broached / CNC Hobbed with Induction Hardening",
+                    false
+                ],
+                [
+                    "Material Composition",
+                    "High-Tensile Die-Cast Aluminium & Case-Hardened Steel Core",
+                    true
+                ],
+                [
+                    "Runout Tolerance",
+                    "< 0.02 mm Axial & Radial Runout for chatter-free rotation",
+                    false
+                ],
+                [
+                    "Quality Benchmark",
+                    "OEM Grade Precision & 100% CMM Inspected",
+                    true
+                ]
+            ],
+            "related": [
+                "3-wheeler-inner-clutch-assembly",
+                "3-wheeler-clutch-housing",
+                "3-wheeler-clutch-plate",
+                "3-wheeler-pressure-plate",
+                "3-wheeler-engine-parts",
+                "3-wheeler-parts"
+            ]
+        },
+        "3-wheeler-drum-brake-shoes": {
+            "cat": "3w",
+            "name": "Three Wheeler Drum Brake Shoes",
+            "label": "Drum Brake Shoes",
+            "banner": "banner_3w_clutch_braking_parts.avif?v=20261005_bigbanner",
+            "hero": "3w_hub_center.avif?v=20261005_nocut",
+            "spec_img": "3w_assembly_1.avif?v=20261005_nocut",
+            "cards": [
+                "3w_heavy_duty_assembly_alt.avif?v=20261005_nocut",
+                "clutch_housing_profile.avif?v=20261005_nocut",
+                "2w_assembly_2.avif?v=20261005_nocut",
+                "3w_hub_center_alt.avif?v=20261005_nocut"
+            ],
+            "specs": [
+                [
+                    "Quality Benchmark",
+                    "OEM Grade Precision",
+                    true
+                ],
+                [
+                    "Material Grade",
+                    "High-Tensile Certified Alloy",
+                    true
+                ],
+                [
+                    "Supply Capability",
+                    "Bulk & Custom Orders",
+                    true
+                ],
+                [
+                    "Stopping Power",
+                    "Responsive braking power and short stopping distances under full passenger loads.",
+                    false
+                ],
+                [
+                    "Wear & Thermal Resistance",
+                    "Friction linings engineered to resist brake fade and thermal breakdown during heavy city driving.",
+                    false
+                ],
+                [
+                    "Noise & Vibration",
+                    "Precision finishing ensures quiet, smooth braking without squeal or pedal chatter.",
+                    false
+                ]
+            ],
+            "related": [
+                "3-wheeler-inner-clutch-assembly",
+                "3-wheeler-clutch-hub",
+                "3-wheeler-clutch-plate",
+                "3-wheeler-pressure-plate",
+                "3-wheeler-parts",
+                "3-wheeler-engine-parts"
+            ]
+        },
+        "3-wheeler-clutch-housing": {
+            "cat": "3w",
+            "no_caps": true,
+            "name": "Three Wheeler Clutch Housing",
+            "label": "Clutch Housing",
+            "banner": "banner_3w_spare_parts.avif?v=20261005_bigbanner",
+            "hero": "3w_hub_center.avif?v=20261005_nocut",
+            "spec_img": "3w_heavy_duty_assembly.avif?v=20261005_nocut",
+            "cards": [
+                "3w_heavy_duty_assembly_alt.avif?v=20261005_nocut",
+                "clutch_housing_profile.avif?v=20261005_nocut",
+                "3w_hub_center_alt.avif?v=20261005_nocut",
+                "3w_commercial_assembly.avif?v=20261005_nocut"
+            ],
+            "specs": [
+                [
+                    "Quality Benchmark",
+                    "OEM Grade Precision",
+                    true
+                ],
+                [
+                    "Material Grade",
+                    "High-Tensile Certified Alloy",
+                    true
+                ],
+                [
+                    "Supply Capability",
+                    "Bulk & Custom Orders",
+                    true
+                ],
+                [
+                    "Economical Solutions",
+                    "Competitive costs without sacrificing quality.",
+                    false
+                ],
+                [
+                    "Industry-Backed Reliability",
+                    "Knowledge supported by years of industry experience, so each component meets practical requirements.",
+                    false
+                ]
+            ],
+            "related": [
+                "3-wheeler-clutch-hub",
+                "3-wheeler-inner-clutch-assembly",
+                "3-wheeler-clutch-plate",
+                "3-wheeler-pressure-plate",
+                "die-cast-clutch-housing-outer",
+                "3-wheeler-parts"
+            ]
+        },
+        "3-wheeler-clutch-plate": {
+            "cat": "3w",
+            "no_manufacturing": true,
+            "no_caps": true,
+            "name": "Three Wheeler Clutch Plate",
+            "label": "Clutch Plate",
+            "banner": "banner_3w_clutch_plate.avif?v=20261005_bigbanner",
+            "hero": "2w_hub_center.avif?v=20261005_nocut",
+            "spec_img": "3w_heavy_duty_assembly.avif?v=20261005_nocut",
+            "cards": [
+                "3w_hub_center.avif?v=20261005_nocut",
+                "3w_assembly_1.avif?v=20261005_nocut",
+                "2w_assembly_2.avif?v=20261005_nocut",
+                "3w_hub_center_alt.avif?v=20261005_nocut"
+            ],
+            "specs": [
+                [
+                    "Quality Benchmark",
+                    "OEM Grade Precision",
+                    true
+                ],
+                [
+                    "Material Grade",
+                    "High-Tensile Certified Alloy",
+                    true
+                ],
+                [
+                    "Supply Capability",
+                    "Bulk & Custom Orders",
+                    true
+                ],
+                [
+                    "Heavy Load Capacity",
+                    "Engineered to handle heavy passenger loads and cargo weight without slipping.",
+                    false
+                ],
+                [
+                    "High Thermal Resistance",
+                    "Maintains consistent friction grip even during frequent urban stop-and-go riding.",
+                    false
+                ],
+                [
+                    "Smooth Torque Transfer",
+                    "Provides smooth power engagement for easy slope climbs and heavy pulls.",
+                    false
+                ]
+            ],
+            "related": [
+                "3-wheeler-pressure-plate",
+                "3-wheeler-inner-clutch-assembly",
+                "3-wheeler-clutch-hub",
+                "3-wheeler-clutch-housing",
+                "3-wheeler-drum-brake-shoes",
+                "3-wheeler-parts"
+            ]
+        },
+        "3-wheeler-pressure-plate": {
+            "cat": "3w",
+            "no_manufacturing": true,
+            "no_caps": true,
+            "name": "Three Wheeler Pressure Plate",
+            "label": "Pressure Plate",
+            "banner": "banner_3w_pressure_plate.avif?v=20261005_bigbanner",
+            "hero": "3w_hub_center_alt.avif?v=20261005_nocut",
+            "spec_img": "2w_hub_spline.avif?v=20261005_nocut",
+            "cards": [
+                "3w_heavy_duty_assembly_alt.avif?v=20261005_nocut",
+                "3w_heavy_duty_assembly.avif?v=20261005_nocut",
+                "3w_assembly_1.avif?v=20261005_nocut",
+                "clutch_housing_cast_studio.avif?v=20261005_nocut"
+            ],
+            "specs": [
+                [
+                    "Quality Benchmark",
+                    "OEM Grade Precision",
+                    true
+                ],
+                [
+                    "Material Grade",
+                    "High-Tensile Certified Alloy",
+                    true
+                ],
+                [
+                    "Supply Capability",
+                    "Bulk & Custom Orders",
+                    true
+                ],
+                [
+                    "Heavy-Duty Pressure Capacity",
+                    "Designed to maintain firm pressure under high engine torque and heavy payload demands.",
+                    false
+                ],
+                [
+                    "Heat & Warpage Resistance",
+                    "Cast from high-grade alloy metals that resist deformation caused by friction heat.",
+                    false
+                ],
+                [
+                    "Long Maintenance Intervals",
+                    "Built to last, reducing vehicle maintenance frequency and costs.",
+                    false
+                ]
+            ],
+            "related": [
+                "3-wheeler-clutch-plate",
+                "3-wheeler-inner-clutch-assembly",
+                "3-wheeler-clutch-hub",
+                "3-wheeler-clutch-housing",
+                "3-wheeler-drum-brake-shoes",
+                "3-wheeler-parts"
+            ]
+        },
+        "3-wheeler-engine-parts": {
+            "cat": "3w",
+            "no_manufacturing": true,
+            "no_caps": true,
+            "section_of": "3-wheeler-clutch-hub",
+            "name": "Three Wheeler Engine Parts",
+            "label": "Engine Parts",
+            "banner": "banner_engine_parts_3w.avif?v=20261005_bigbanner",
+            "hero": "clutch_housing_profile.avif?v=20261005_nocut",
+            "spec_img": "clutch_housing_cast.avif?v=20261005_nocut",
+            "cards": [
+                "3w_hub_center.avif?v=20261005_nocut",
+                "3w_heavy_duty_assembly.avif?v=20261005_nocut",
+                "3w_assembly_1.avif?v=20261005_nocut",
+                "3w_hub_center_alt.avif?v=20261005_nocut"
+            ],
+            "specs": [
+                [
+                    "Quality Benchmark",
+                    "OEM Grade Precision",
+                    true
+                ],
+                [
+                    "Material Grade",
+                    "High-Tensile Certified Alloy",
+                    true
+                ],
+                [
+                    "Supply Capability",
+                    "Bulk & Custom Orders",
+                    true
+                ],
+                [
+                    "Service Life",
+                    "Longer service life and improved durability.",
+                    false
+                ],
+                [
+                    "Model Coverage",
+                    "Suitable for a large variety of three-wheeler models.",
+                    false
+                ],
+                [
+                    "Performance",
+                    "Specifically designed to improve performance and fuel efficiency.",
+                    false
+                ]
+            ],
+            "related": [
+                "3-wheeler-parts",
+                "3-wheeler-clutch-housing",
+                "3-wheeler-clutch-hub",
+                "3-wheeler-inner-clutch-assembly",
+                "cnc-machined-engine-components",
+                "bike-engine-components"
+            ]
+        },
+        "die-cast-clutch-housing-outer": {
+            "cat": "diecast",
+            "name": "Die-Cast Clutch Housing Outer",
+            "label": "Die-Cast Clutch Housing Outer",
+            "banner": "banner_aluminium_die_casting.avif?v=20261005_bigbanner",
+            "hero": "clutch_housing_cast_studio.avif?v=20261005_nocut",
+            "spec_img": "die_casting_2.avif?v=20261005_nocut",
+            "cards": [
+                "clutch_housing_profile.avif?v=20261005_nocut",
+                "cnc_finishing_studio.avif?v=20261005_nocut",
+                "die_casting_1.avif?v=20261005_nocut",
+                "clutch_housing_outer.avif?v=20261005_nocut"
+            ],
+            "specs": [
+                [
+                    "Quality Benchmark",
+                    "OEM Grade Precision",
+                    true
+                ],
+                [
+                    "Material Grade",
+                    "High-Tensile Certified Alloy",
+                    true
+                ],
+                [
+                    "Supply Capability",
+                    "Bulk & Custom Orders",
+                    true
+                ],
+                [
+                    "Production Economics",
+                    "Economical manufacturing for medium- to high-volume needs.",
+                    false
+                ],
+                [
+                    "Corrosion Resistance",
+                    "Exceptional corrosion resistance, supporting sustained performance.",
+                    false
+                ],
+                [
+                    "Custom Designs",
+                    "Designs that can be altered to meet the needs of each client.",
+                    false
+                ]
+            ],
+            "related": [
+                "2-wheeler-clutch-outer-housing",
+                "3-wheeler-clutch-housing",
+                "precision-die-casting-parts",
+                "customized-die-casting-solution",
+                "cnc-machined-engine-components",
+                "high-volume-production-castings"
+            ]
+        },
+        "customized-die-casting-solution": {
+            "cat": "diecast",
+            "no_caps": true,
+            "name": "Customised Die-Casting Solutions",
+            "label": "Customised Die-Casting Solutions",
+            "banner": "banner_customized_die_casting.avif?v=20261005_bigbanner",
+            "hero": "factory_tooling.avif?v=20261005_nocut",
+            "spec_img": "factory_cnc_machining.avif?v=20261005_nocut",
+            "cards": [
+                "clutch_housing_cast_studio.avif?v=20261005_nocut",
+                "cnc_finishing_studio.avif?v=20261005_nocut",
+                "die_casting_1.avif?v=20261005_nocut",
+                "factory_assembly_line.avif?v=20261005_nocut"
+            ],
+            "specs": [
+                [
+                    "Quality Benchmark",
+                    "OEM Grade Precision",
+                    true
+                ],
+                [
+                    "Material Grade",
+                    "High-Tensile Certified Alloy",
+                    true
+                ],
+                [
+                    "Supply Capability",
+                    "Bulk & Custom Orders",
+                    true
+                ],
+                [
+                    "Precision & Consistency",
+                    "Excellent dimensional precision and constant quality in each component.",
+                    false
+                ],
+                [
+                    "Complex Designs",
+                    "Adaptability to produce intricate patterns and complicated shapes.",
+                    false
+                ],
+                [
+                    "Turnaround",
+                    "Reduced turnaround time through improved production procedures.",
+                    false
+                ]
+            ],
+            "related": [
+                "precision-die-casting-parts",
+                "high-volume-production-castings",
+                "cnc-machined-engine-components",
+                "die-cast-clutch-housing-outer",
+                "2-wheeler-clutch-outer-housing",
+                "3-wheeler-clutch-housing"
+            ]
+        },
+        "cnc-machined-engine-components": {
+            "cat": "diecast",
+            "no_caps": true,
+            "name": "CNC Machined Engine Components",
+            "label": "CNC Machined Engine Components",
+            "banner": "banner_die_casting_export.avif?v=20261005_bigbanner",
+            "hero": "factory_precision_inspection.avif?v=20261005_nocut",
+            "spec_img": "factory_batch_production.avif?v=20261005_nocut",
+            "cards": [
+                "clutch_housing_cast_studio.avif?v=20261005_nocut",
+                "cnc_finishing_studio.avif?v=20261005_nocut",
+                "die_casting_1.avif?v=20261005_nocut",
+                "factory_tooling.avif?v=20261005_nocut"
+            ],
+            "specs": [
+                [
+                    "Quality Benchmark",
+                    "OEM Grade Precision",
+                    true
+                ],
+                [
+                    "Material Grade",
+                    "High-Tensile Certified Alloy",
+                    true
+                ],
+                [
+                    "Supply Capability",
+                    "Bulk & Custom Orders",
+                    true
+                ],
+                [
+                    "Dimensional Accuracy",
+                    "Excellent dimensional accuracy and precision in each component.",
+                    false
+                ],
+                [
+                    "Material Efficiency",
+                    "Economical manufacturing with little waste of materials.",
+                    false
+                ],
+                [
+                    "Batch Consistency",
+                    "Regularity in extensive production runs.",
+                    false
+                ]
+            ],
+            "related": [
+                "precision-die-casting-parts",
+                "customized-die-casting-solution",
+                "high-volume-production-castings",
+                "bike-engine-components",
+                "3-wheeler-engine-parts",
+                "die-cast-clutch-housing-outer"
+            ]
+        },
+        "high-volume-production-castings": {
+            "cat": "diecast",
+            "no_caps": true,
+            "name": "High-Volume Production Castings",
+            "label": "High-Volume Production Castings",
+            "banner": "banner_automotive_parts_components.avif?v=20261005_bigbanner",
+            "hero": "clutch_housing_cast_studio.avif?v=20261005_nocut",
+            "spec_img": "die_casting_2.avif?v=20261005_nocut",
+            "cards": [
+                "factory_batch_production.avif?v=20261005_nocut",
+                "2w_clutch_assembly.avif?v=20261005_nocut",
+                "3w_heavy_duty_assembly.avif?v=20261005_nocut",
+                "clutch_housing_outer.avif?v=20261005_nocut"
+            ],
+            "specs": [
+                [
+                    "Quality Benchmark",
+                    "OEM Grade Precision",
+                    true
+                ],
+                [
+                    "Material Grade",
+                    "High-Tensile Certified Alloy",
+                    true
+                ],
+                [
+                    "Supply Capability",
+                    "Bulk & Custom Orders",
+                    true
+                ],
+                [
+                    "Model Compatibility",
+                    "Compatibility with many different vehicle models.",
+                    false
+                ],
+                [
+                    "Cost Efficiency",
+                    "Economical solutions without sacrificing quality.",
+                    false
+                ]
+            ],
+            "related": [
+                "customized-die-casting-solution",
+                "precision-die-casting-parts",
+                "cnc-machined-engine-components",
+                "die-cast-clutch-housing-outer",
+                "2-wheeler-clutch-outer-housing",
+                "3-wheeler-clutch-housing"
+            ]
+        },
+        "aluminium-die-casting": {
+            "cat": "diecast",
+            "section_of": "die-cast-clutch-housing-outer",
+            "name": "Aluminium Die Casting",
+            "label": "Aluminium Die Casting",
+            "hero": "die_casting_1.avif?v=20261005_nocut"
+        },
+        "precision-die-casting-parts": {
+            "cat": "diecast",
+            "no_caps": true,
+            "no_card": true,
+            "name": "Precision Die Casting Parts",
+            "label": "Precision Die Casting Parts",
+            "banner": "banner_precision_die_casting.avif?v=20261005_bigbanner",
+            "hero": "cnc_finishing_studio.avif?v=20261005_nocut",
+            "spec_img": "factory_tooling.avif?v=20261005_nocut",
+            "cards": [
+                "clutch_housing_cast_studio.avif?v=20261005_nocut",
+                "die_casting_2.avif?v=20261005_nocut",
+                "die_casting_1.avif?v=20261005_nocut",
+                "factory_assembly_line.avif?v=20261005_nocut"
+            ],
+            "specs": [
+                [
+                    "Quality Benchmark",
+                    "OEM Grade Precision",
+                    true
+                ],
+                [
+                    "Material Grade",
+                    "High-Tensile Certified Alloy",
+                    true
+                ],
+                [
+                    "Supply Capability",
+                    "Bulk & Custom Orders",
+                    true
+                ],
+                [
+                    "Dimensional Accuracy",
+                    "High dimensional stability and accuracy for important uses.",
+                    false
+                ],
+                [
+                    "Surface Finish",
+                    "Superior surface quality that minimises the requirement for secondary machining.",
+                    false
+                ],
+                [
+                    "Lightweight Strength",
+                    "Durability and lightweight design elements for increased effectiveness.",
+                    false
+                ]
+            ],
+            "related": [
+                "customized-die-casting-solution",
+                "cnc-machined-engine-components",
+                "high-volume-production-castings",
+                "die-cast-clutch-housing-outer",
+                "2-wheeler-clutch-outer-housing",
+                "bike-engine-components"
+            ]
+        }
+    },
+    "categories": {
+        "2w": {
+            "title": "Two Wheeler Components",
+            "icon": "fa-motorcycle"
+        },
+        "3w": {
+            "title": "Three Wheeler Components",
+            "icon": "fa-truck-pickup"
+        },
+        "diecast": {
+            "title": "Aluminium Die Casting",
+            "icon": "fa-cog"
+        }
+    },
+    "marketFiles": {
+        "bangladesh": [
+            "2-wheeler-3-wheeler-clutch-and-pressure-plate.php",
+            "2-wheeler-3-wheeler-clutch-kit.php",
+            "2-wheeler-auto-parts.php",
+            "2-wheeler-clutch-hub.php",
+            "2-wheeler-clutch-outer-housing.php",
+            "2-wheeler-clutch-plate.php",
+            "2-wheeler-inner-clutch-assembly.php",
+            "2-wheeler-pressure-plate.php",
+            "3-wheeler-clutch-and-pressure-plate.php",
+            "3-wheeler-clutch-braking-parts.php",
+            "3-wheeler-clutch-housing.php",
+            "3-wheeler-clutch-hub.php",
+            "3-wheeler-clutch-kit.php",
+            "3-wheeler-clutch-plate.php",
+            "3-wheeler-drum-brake-shoes.php",
+            "3-wheeler-engine-parts.php",
+            "3-wheeler-inner-clutch-assembly.php",
+            "3-wheeler-parts.php",
+            "3-wheeler-pressure-plate.php",
+            "3-wheeler-spare-parts.php",
+            "about-us.php",
+            "aluminium-die-casting.php",
+            "automotive-parts-and-components.php",
+            "bike-engine-components.php",
+            "cnc-machined-engine-components.php",
+            "contact-us.php",
+            "customized-die-casting-solution.php",
+            "die-cast-clutch-housing-outer.php",
+            "engine-parts-for-3-wheeler.php",
+            "engineering-focused-great-for-die-casting-export.php",
+            "footer.php",
+            "header.php",
+            "high-volume-production-castings.php",
+            "index.php",
+            "motorcycle-spare-parts.php",
+            "precision-die-casting-parts.php",
+            "products.php"
+        ],
+        "nigeria": [
+            "2-wheeler-3-wheeler-clutch-and-pressure-plate.php",
+            "2-wheeler-3-wheeler-clutch-kit.php",
+            "2-wheeler-auto-parts.php",
+            "2-wheeler-clutch-hub.php",
+            "2-wheeler-clutch-outer-housing.php",
+            "2-wheeler-clutch-plate.php",
+            "2-wheeler-inner-clutch-assembly.php",
+            "2-wheeler-pressure-plate.php",
+            "3-wheeler-clutch-and-pressure-plate.php",
+            "3-wheeler-clutch-braking-parts.php",
+            "3-wheeler-clutch-housing.php",
+            "3-wheeler-clutch-hub.php",
+            "3-wheeler-clutch-kit.php",
+            "3-wheeler-clutch-plate.php",
+            "3-wheeler-drum-brake-shoes.php",
+            "3-wheeler-engine-parts.php",
+            "3-wheeler-inner-clutch-assembly.php",
+            "3-wheeler-parts.php",
+            "3-wheeler-pressure-plate.php",
+            "3-wheeler-spare-parts.php",
+            "about-us.php",
+            "aluminium-die-casting.php",
+            "automotive-parts-and-components.php",
+            "bike-engine-components.php",
+            "cnc-machined-engine-components.php",
+            "contact-us.php",
+            "customized-die-casting-solution.php",
+            "die-cast-clutch-housing-outer.php",
+            "engine-parts-for-3-wheeler.php",
+            "engineering-focused-great-for-die-casting-export.php",
+            "footer.php",
+            "header.php",
+            "high-volume-production-castings.php",
+            "index.php",
+            "motorcycle-spare-parts.php",
+            "precision-die-casting-parts.php",
+            "products.php"
+        ],
+        "nepal": [
+            "2-wheeler-3-wheeler-clutch-and-pressure-plate.php",
+            "2-wheeler-3-wheeler-clutch-kit.php",
+            "2-wheeler-auto-parts.php",
+            "2-wheeler-clutch-hub.php",
+            "2-wheeler-clutch-outer-housing.php",
+            "2-wheeler-clutch-plate.php",
+            "2-wheeler-inner-clutch-assembly.php",
+            "2-wheeler-pressure-plate.php",
+            "3-wheeler-clutch-and-pressure-plate.php",
+            "3-wheeler-clutch-braking-parts.php",
+            "3-wheeler-clutch-housing.php",
+            "3-wheeler-clutch-hub.php",
+            "3-wheeler-clutch-kit.php",
+            "3-wheeler-clutch-plate.php",
+            "3-wheeler-drum-brake-shoes.php",
+            "3-wheeler-engine-parts.php",
+            "3-wheeler-inner-clutch-assembly.php",
+            "3-wheeler-parts.php",
+            "3-wheeler-pressure-plate.php",
+            "3-wheeler-spare-parts.php",
+            "about-us.php",
+            "aluminium-die-casting.php",
+            "automotive-parts-and-components.php",
+            "bike-engine-components.php",
+            "cnc-machined-engine-components.php",
+            "contact-us.php",
+            "customized-die-casting-solution.php",
+            "die-cast-clutch-housing-outer.php",
+            "engine-parts-for-3-wheeler.php",
+            "engineering-focused-great-for-die-casting-export.php",
+            "footer.php",
+            "header.php",
+            "high-volume-production-castings.php",
+            "index.php",
+            "motorcycle-spare-parts.php",
+            "precision-die-casting-parts.php",
+            "products.php"
+        ],
+        "colombia": [
+            "2-wheeler-3-wheeler-clutch-and-pressure-plate.php",
+            "2-wheeler-3-wheeler-clutch-kit.php",
+            "2-wheeler-auto-parts.php",
+            "2-wheeler-clutch-hub.php",
+            "2-wheeler-clutch-outer-housing.php",
+            "2-wheeler-clutch-plate.php",
+            "2-wheeler-inner-clutch-assembly.php",
+            "2-wheeler-pressure-plate.php",
+            "3-wheeler-clutch-and-pressure-plate.php",
+            "3-wheeler-clutch-braking-parts.php",
+            "3-wheeler-clutch-housing.php",
+            "3-wheeler-clutch-hub.php",
+            "3-wheeler-clutch-kit.php",
+            "3-wheeler-clutch-plate.php",
+            "3-wheeler-drum-brake-shoes.php",
+            "3-wheeler-engine-parts.php",
+            "3-wheeler-inner-clutch-assembly.php",
+            "3-wheeler-parts.php",
+            "3-wheeler-pressure-plate.php",
+            "3-wheeler-spare-parts.php",
+            "about-us.php",
+            "aluminium-die-casting.php",
+            "automotive-parts-and-components.php",
+            "bike-engine-components.php",
+            "cnc-machined-engine-components.php",
+            "contact-us.php",
+            "customized-die-casting-solution.php",
+            "die-cast-clutch-housing-outer.php",
+            "engine-parts-for-3-wheeler.php",
+            "engineering-focused-great-for-die-casting-export.php",
+            "footer.php",
+            "header.php",
+            "high-volume-production-castings.php",
+            "index.php",
+            "motorcycle-spare-parts.php",
+            "precision-die-casting-parts.php",
+            "products.php"
+        ],
+        "srilanka": [
+            "2-wheeler-3-wheeler-clutch-and-pressure-plate.php",
+            "2-wheeler-3-wheeler-clutch-kit.php",
+            "2-wheeler-auto-parts.php",
+            "2-wheeler-clutch-hub.php",
+            "2-wheeler-clutch-outer-housing.php",
+            "2-wheeler-clutch-plate.php",
+            "2-wheeler-inner-clutch-assembly.php",
+            "2-wheeler-pressure-plate.php",
+            "3-wheeler-clutch-and-pressure-plate.php",
+            "3-wheeler-clutch-braking-parts.php",
+            "3-wheeler-clutch-housing.php",
+            "3-wheeler-clutch-hub.php",
+            "3-wheeler-clutch-kit.php",
+            "3-wheeler-clutch-plate.php",
+            "3-wheeler-drum-brake-shoes.php",
+            "3-wheeler-engine-parts.php",
+            "3-wheeler-inner-clutch-assembly.php",
+            "3-wheeler-parts.php",
+            "3-wheeler-pressure-plate.php",
+            "3-wheeler-spare-parts.php",
+            "about-us.php",
+            "aluminium-die-casting.php",
+            "automotive-parts-and-components.php",
+            "bike-engine-components.php",
+            "cnc-machined-engine-components.php",
+            "contact-us.php",
+            "customized-die-casting-solution.php",
+            "die-cast-clutch-housing-outer.php",
+            "engine-parts-for-3-wheeler.php",
+            "engineering-focused-great-for-die-casting-export.php",
+            "footer.php",
+            "header.php",
+            "high-volume-production-castings.php",
+            "index.php",
+            "motorcycle-spare-parts.php",
+            "precision-die-casting-parts.php",
+            "products.php"
+        ],
+        "egypt": [
+            "2-wheeler-3-wheeler-clutch-and-pressure-plate.php",
+            "2-wheeler-3-wheeler-clutch-kit.php",
+            "2-wheeler-auto-parts.php",
+            "2-wheeler-clutch-hub.php",
+            "2-wheeler-clutch-outer-housing.php",
+            "2-wheeler-clutch-plate.php",
+            "2-wheeler-inner-clutch-assembly.php",
+            "2-wheeler-pressure-plate.php",
+            "3-wheeler-clutch-and-pressure-plate.php",
+            "3-wheeler-clutch-braking-parts.php",
+            "3-wheeler-clutch-housing.php",
+            "3-wheeler-clutch-hub.php",
+            "3-wheeler-clutch-kit.php",
+            "3-wheeler-clutch-plate.php",
+            "3-wheeler-drum-brake-shoes.php",
+            "3-wheeler-engine-parts.php",
+            "3-wheeler-inner-clutch-assembly.php",
+            "3-wheeler-parts.php",
+            "3-wheeler-pressure-plate.php",
+            "3-wheeler-spare-parts.php",
+            "about-us.php",
+            "aluminium-die-casting.php",
+            "automotive-parts-and-components.php",
+            "bike-engine-components.php",
+            "cnc-machined-engine-components.php",
+            "contact-us.php",
+            "customized-die-casting-solution.php",
+            "die-cast-clutch-housing-outer.php",
+            "engine-parts-for-3-wheeler.php",
+            "engineering-focused-great-for-die-casting-export.php",
+            "footer.php",
+            "header.php",
+            "high-volume-production-castings.php",
+            "index.php",
+            "motorcycle-spare-parts.php",
+            "precision-die-casting-parts.php",
+            "products.php"
+        ],
+        "kenya": [
+            "2-wheeler-3-wheeler-clutch-and-pressure-plate.php",
+            "2-wheeler-3-wheeler-clutch-kit.php",
+            "2-wheeler-auto-parts.php",
+            "2-wheeler-clutch-hub.php",
+            "2-wheeler-clutch-outer-housing.php",
+            "2-wheeler-clutch-plate.php",
+            "2-wheeler-inner-clutch-assembly.php",
+            "2-wheeler-pressure-plate.php",
+            "3-wheeler-clutch-and-pressure-plate.php",
+            "3-wheeler-clutch-braking-parts.php",
+            "3-wheeler-clutch-housing.php",
+            "3-wheeler-clutch-hub.php",
+            "3-wheeler-clutch-kit.php",
+            "3-wheeler-clutch-plate.php",
+            "3-wheeler-drum-brake-shoes.php",
+            "3-wheeler-engine-parts.php",
+            "3-wheeler-inner-clutch-assembly.php",
+            "3-wheeler-parts.php",
+            "3-wheeler-pressure-plate.php",
+            "3-wheeler-spare-parts.php",
+            "about-us.php",
+            "aluminium-die-casting.php",
+            "automotive-parts-and-components.php",
+            "bike-engine-components.php",
+            "cnc-machined-engine-components.php",
+            "contact-us.php",
+            "customized-die-casting-solution.php",
+            "die-cast-clutch-housing-outer.php",
+            "engine-parts-for-3-wheeler.php",
+            "engineering-focused-great-for-die-casting-export.php",
+            "footer.php",
+            "header.php",
+            "high-volume-production-castings.php",
+            "index.php",
+            "motorcycle-spare-parts.php",
+            "precision-die-casting-parts.php",
+            "products.php"
+        ],
+        "uae": [
+            "2-wheeler-3-wheeler-clutch-and-pressure-plate.php",
+            "2-wheeler-3-wheeler-clutch-kit.php",
+            "2-wheeler-auto-parts.php",
+            "2-wheeler-clutch-hub.php",
+            "2-wheeler-clutch-outer-housing.php",
+            "2-wheeler-clutch-plate.php",
+            "2-wheeler-inner-clutch-assembly.php",
+            "2-wheeler-pressure-plate.php",
+            "3-wheeler-clutch-and-pressure-plate.php",
+            "3-wheeler-clutch-braking-parts.php",
+            "3-wheeler-clutch-housing.php",
+            "3-wheeler-clutch-hub.php",
+            "3-wheeler-clutch-kit.php",
+            "3-wheeler-clutch-plate.php",
+            "3-wheeler-drum-brake-shoes.php",
+            "3-wheeler-engine-parts.php",
+            "3-wheeler-inner-clutch-assembly.php",
+            "3-wheeler-parts.php",
+            "3-wheeler-pressure-plate.php",
+            "3-wheeler-spare-parts.php",
+            "about-us.php",
+            "aluminium-die-casting.php",
+            "automotive-parts-and-components.php",
+            "bike-engine-components.php",
+            "cnc-machined-engine-components.php",
+            "contact-us.php",
+            "customized-die-casting-solution.php",
+            "die-cast-clutch-housing-outer.php",
+            "engine-parts-for-3-wheeler.php",
+            "engineering-focused-great-for-die-casting-export.php",
+            "footer.php",
+            "header.php",
+            "high-volume-production-castings.php",
+            "index.php",
+            "motorcycle-spare-parts.php",
+            "precision-die-casting-parts.php",
+            "products.php"
+        ],
+        "mexico": [
+            "2-wheeler-3-wheeler-clutch-and-pressure-plate.php",
+            "2-wheeler-3-wheeler-clutch-kit.php",
+            "2-wheeler-auto-parts.php",
+            "2-wheeler-clutch-hub.php",
+            "2-wheeler-clutch-outer-housing.php",
+            "2-wheeler-clutch-plate.php",
+            "2-wheeler-inner-clutch-assembly.php",
+            "2-wheeler-pressure-plate.php",
+            "3-wheeler-clutch-and-pressure-plate.php",
+            "3-wheeler-clutch-braking-parts.php",
+            "3-wheeler-clutch-housing.php",
+            "3-wheeler-clutch-hub.php",
+            "3-wheeler-clutch-kit.php",
+            "3-wheeler-clutch-plate.php",
+            "3-wheeler-drum-brake-shoes.php",
+            "3-wheeler-engine-parts.php",
+            "3-wheeler-inner-clutch-assembly.php",
+            "3-wheeler-parts.php",
+            "3-wheeler-pressure-plate.php",
+            "3-wheeler-spare-parts.php",
+            "about-us.php",
+            "aluminium-die-casting.php",
+            "automotive-parts-and-components.php",
+            "bike-engine-components.php",
+            "cnc-machined-engine-components.php",
+            "contact-us.php",
+            "customized-die-casting-solution.php",
+            "die-cast-clutch-housing-outer.php",
+            "engine-parts-for-3-wheeler.php",
+            "engineering-focused-great-for-die-casting-export.php",
+            "footer.php",
+            "header.php",
+            "high-volume-production-castings.php",
+            "index.php",
+            "motorcycle-spare-parts.php",
+            "precision-die-casting-parts.php",
+            "products.php"
+        ],
+        "philippines": [
+            "2-wheeler-3-wheeler-clutch-and-pressure-plate.php",
+            "2-wheeler-3-wheeler-clutch-kit.php",
+            "2-wheeler-auto-parts.php",
+            "2-wheeler-clutch-hub.php",
+            "2-wheeler-clutch-outer-housing.php",
+            "2-wheeler-clutch-plate.php",
+            "2-wheeler-inner-clutch-assembly.php",
+            "2-wheeler-pressure-plate.php",
+            "3-wheeler-clutch-and-pressure-plate.php",
+            "3-wheeler-clutch-braking-parts.php",
+            "3-wheeler-clutch-housing.php",
+            "3-wheeler-clutch-hub.php",
+            "3-wheeler-clutch-kit.php",
+            "3-wheeler-clutch-plate.php",
+            "3-wheeler-drum-brake-shoes.php",
+            "3-wheeler-engine-parts.php",
+            "3-wheeler-inner-clutch-assembly.php",
+            "3-wheeler-parts.php",
+            "3-wheeler-pressure-plate.php",
+            "3-wheeler-spare-parts.php",
+            "about-us.php",
+            "aluminium-die-casting.php",
+            "automotive-parts-and-components.php",
+            "bike-engine-components.php",
+            "cnc-machined-engine-components.php",
+            "contact-us.php",
+            "customized-die-casting-solution.php",
+            "die-cast-clutch-housing-outer.php",
+            "engine-parts-for-3-wheeler.php",
+            "engineering-focused-great-for-die-casting-export.php",
+            "footer.php",
+            "header.php",
+            "high-volume-production-castings.php",
+            "index.php",
+            "motorcycle-spare-parts.php",
+            "precision-die-casting-parts.php",
+            "products.php"
+        ],
+        "vietnam": [
+            "2-wheeler-3-wheeler-clutch-and-pressure-plate.php",
+            "2-wheeler-3-wheeler-clutch-kit.php",
+            "2-wheeler-auto-parts.php",
+            "2-wheeler-clutch-hub.php",
+            "2-wheeler-clutch-outer-housing.php",
+            "2-wheeler-clutch-plate.php",
+            "2-wheeler-inner-clutch-assembly.php",
+            "2-wheeler-pressure-plate.php",
+            "3-wheeler-clutch-and-pressure-plate.php",
+            "3-wheeler-clutch-braking-parts.php",
+            "3-wheeler-clutch-housing.php",
+            "3-wheeler-clutch-hub.php",
+            "3-wheeler-clutch-kit.php",
+            "3-wheeler-clutch-plate.php",
+            "3-wheeler-drum-brake-shoes.php",
+            "3-wheeler-engine-parts.php",
+            "3-wheeler-inner-clutch-assembly.php",
+            "3-wheeler-parts.php",
+            "3-wheeler-pressure-plate.php",
+            "3-wheeler-spare-parts.php",
+            "about-us.php",
+            "aluminium-die-casting.php",
+            "automotive-parts-and-components.php",
+            "bike-engine-components.php",
+            "cnc-machined-engine-components.php",
+            "contact-us.php",
+            "customized-die-casting-solution.php",
+            "die-cast-clutch-housing-outer.php",
+            "engine-parts-for-3-wheeler.php",
+            "engineering-focused-great-for-die-casting-export.php",
+            "footer.php",
+            "header.php",
+            "high-volume-production-castings.php",
+            "index.php",
+            "motorcycle-spare-parts.php",
+            "precision-die-casting-parts.php",
+            "products.php"
+        ]
+    }
+}

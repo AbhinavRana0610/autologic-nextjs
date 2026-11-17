@@ -1,0 +1,61 @@
+{
+    "slug": "2-wheeler-pressure-plate",
+    "title": "Two Wheeler Clutch Pressure Plate Manufacturer | Autologic",
+    "description": "Autologic Industries is a premier manufacturer, supplier, and exporter of dynamically balanced two wheeler clutch pressure plates and auto parts.",
+    "keyword": "Two Wheeler Clutch Pressure Plate Manufacturer, Two Wheeler Clutch Pressure Plate Supplier, Two Wheeler Clutch Pressure Plate Exporter, Clutch Pressure Plate Supplier, Clutch Pressure Plate Exporter, motorcycle pressure plate",
+    "productSchema": {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Two Wheeler Clutch Pressure Plates",
+        "image": [
+            "https://autologicindustries.com/img/products_hd/banner_2w_pressure_plate.avif",
+            "https://autologicindustries.com/img/products_hd/2w_clutch_assembly_alt.avif"
+        ],
+        "description": "Precision-stamped and surface-ground two wheeler clutch pressure plates and auto parts for motorcycles and scooters. Delivers uniform clamping force, zero clutch slippage, and optimal torque transfer.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Autologic Industries"
+        },
+        "manufacturer": {
+            "@type": "Organization",
+            "name": "Autologic Industries",
+            "url": "https://autologicindustries.com/"
+        },
+        "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://autologicindustries.com/2-wheeler-pressure-plate.php"
+        }
+    },
+    "faqSchema": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Who is a two wheeler clutch pressure plate manufacturer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Autologic Industries is a two wheeler clutch pressure plate manufacturer producing precision pressure plates and automotive components for OEM and aftermarket clients."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How can I source two wheeler clutch pressure plates in bulk?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Share your vehicle application models, part dimensions, required quantities, and delivery timelines with our sales team for a rapid quotation and sample plan."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does Autologic Industries export clutch pressure plates internationally?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. As a two wheeler clutch pressure plate exporter, we ship motorcycle and scooter pressure plates worldwide with compliant packaging, containerised logistics and customs documentation."
+                }
+            }
+        ]
+    }
+}

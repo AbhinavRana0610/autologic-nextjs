@@ -1,0 +1,538 @@
+ /* === COLOR PALETTE (UPDATED) === */
+        :root {
+            --primary-color: #8f0000; /* Maroon/Dark Red */
+            --accent-color: #8f0000; /* Maroon/Dark Red */
+            --dark-color: #212121; /* Near Black */
+            --light-bg: #fff; /* White */
+            --dark-hover: #6b0000; /* Slightly darker maroon for button hovers */
+            --subtle-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+            --strong-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        /* === RESET & UTILITIES === */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            overflow-x: clip; 
+            background-color: var(--light-bg); /* Updated */
+            color: var(--dark-color); /* Updated */
+        }
+        ul { list-style: none; }
+        a { text-decoration: none; color: inherit; }
+
+
+       
+
+/* --- Section Styling --- */
+.content-section {
+    position: relative;
+    width: 100%;
+    padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: auto;
+    /* Added perspective for 3D transform effect */
+    perspective: 1000px;
+}
+
+/* --- Container for Centering Content --- */
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-align: center;
+}
+
+/* --- Typography --- */
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-top: 0;
+    color: #1a1a1a;
+    font-size: 2.75rem;
+    margin-bottom: 1rem;
+}
+
+.subheading {
+    font-size: 1.1rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 4rem;
+}
+
+/* --- Core Values Grid (Mobile Responsive) --- */
+.values-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+/* --- Value Card Styling --- */
+.value-card {
+    background-color: #ffffff;
+    border-radius: 0.75rem; /* Slightly larger radius */
+    padding: 2.5rem;
+    text-align: left;
+    /* Initial shadow and transition for non-GSAP properties */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), border-top-color 0.3s ease;
+    border-top: 4px solid transparent; /* Placeholder for hover effect */
+    cursor: pointer; /* Indicate interactivity */
+
+    /* Set initial state for GSAP animation (on-scroll) */
+    opacity: 0; 
+    transform: translateY(50px) rotateX(-30deg);
+    
+    /* Ensure transform-style is preserved for potential complex 3D transforms */
+    transform-style: preserve-3d;
+}
+
+/* Base hover effects (handled by CSS for non-transform properties) */
+.value-card:hover, .value-card.active-touch {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+    border-top-color: #b30000; /* Accent color */
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    color: #c7bca1; /* Accent color */
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+    color: #1a1a1a;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* --- Responsive Design (Enhanced) --- */
+@media (min-width: 640px) {
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .values-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    h2 {
+        font-size: 3.5rem;
+    }
+    .content-section {
+        padding: 7rem 0;
+    }
+}
+
+/* Ensure a better tap experience on mobile */
+.value-card:focus {
+    outline: none; /* Remove default focus outline */
+}
+
+  /* --- Marquee Container Styles --- */
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .marquee-content {
+            display: flex;
+            white-space: nowrap; 
+            width: fit-content; 
+            padding: 15px 0;
+            /* Note: CSS animation properties removed here, now handled by GSAP */
+        }
+        
+        .marquee-item {
+            font-weight: 700;
+            font-size: clamp(1rem, 4vw, 2.5rem); 
+            padding: 0 40px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        /* ---------------------------------
+           1. Right-to-Left Ribbon (Primary)
+           --------------------------------- */
+        .marquee.rtl {
+            background-color:  #8f0000;
+            color: #ffffff;
+            /* border-top: 2px solid #E0BBE4;
+            border-bottom: 2px solid#E0BBE4; */
+            margin-bottom: 22px;
+        }
+
+        /* ---------------------------------
+           2. Left-to-Right Ribbon (Secondary)
+           --------------------------------- */
+        .marquee.ltr {
+            background-color:#212121;
+            color: #ffffff; 
+        }
+
+        /* Responsive Adjustments for smaller screens */
+        @media (max-width: 600px) {
+            .marquee-item {
+                font-size: 1.2rem;
+                padding: 0 20px;
+            }
+        }
+
+
+
+  /* Base Styles */
+  body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            padding-top: 50px;
+        }
+
+        .bike-feature-section {
+            display: flex;
+            flex-direction: row;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-radius: 16px;
+            overflow: hidden;
+            min-height: auto; 
+            opacity: 1; 
+            transform: none; 
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+
+        .bike-feature-section.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .bike-container {
+            flex: 1;
+            padding: 30px;
+            position: sticky; 
+            top: 50px; 
+            align-self: flex-start; 
+            height: fit-content; 
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* --- 1. DEFINE TWO SEPARATE ANIMATIONS --- */
+        
+        /* Float A: Moves UP then down */
+        @keyframes floatUpAndDown {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); } /* Moves Up */
+            100% { transform: translateY(0px); }
+        }
+
+        /* Float B: Moves DOWN then up (Opposite) */
+        @keyframes floatDownAndUp {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(15px); } /* Moves Down */
+            100% { transform: translateY(0px); }
+        }
+
+        /* --- 2. APPLY STYLES --- */
+
+        .bike-image {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: contain;
+            opacity: 1;
+            will-change: transform;
+            transition: opacity 0.5s ease-out;
+        }
+        
+        .auto-image {
+            width: 80%; 
+            height: auto;
+            max-height: 250px;
+            object-fit: contain;
+            margin-top: 30px; 
+            opacity: 1;
+            will-change: transform;
+            transition: opacity 0.5s ease-out;
+        }
+
+        /* --- 3. TRIGGER ANIMATIONS --- */
+        
+        .bike-feature-section .bike-image {
+            opacity: 1;
+            /* Bike uses Float A */
+            animation: floatUpAndDown 4s ease-in-out infinite;
+        }
+        
+        .bike-feature-section .auto-image {
+            opacity: 1;
+            /* Auto uses Float B (Opposite direction) */
+            animation: floatDownAndUp 4s ease-in-out infinite;
+        }
+
+        .content-container {
+            flex: 2;
+            padding: 50px;
+            background-color: #fcfcfc;
+        }
+
+        .content-container h1,
+        .content-container h2 {
+            font-size: 38px;
+            color: #CC0000;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .content-container p {
+            margin-bottom: 25px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .bike-feature-section {
+                flex-direction: column;
+                min-height: auto;
+            }
+
+            .bike-container {
+                position: relative;
+                top: 0;
+                padding: 20px;
+                min-width: 100%;
+            }
+
+            /* Force animation on mobile immediately */
+            .bike-image, .auto-image {
+                opacity: 1 !important;
+            }
+
+            .bike-image {
+                max-height: 300px;
+                margin-top: 0;
+                animation: floatUpAndDown 4s ease-in-out infinite;
+            }
+            
+            .auto-image {
+                animation: floatUpAndDown 4s ease-in-out infinite;
+            }
+
+            .content-container {
+                padding: 30px 20px;
+            }
+            
+            .content-container h1,
+        .content-container h2 {
+                font-size: 32px;
+            }
+        }
+
+        /* ==================================== */
+/* 1. TRUSTED MARQUE SECTION STYLES - FIX APPLIED HERE */
+/* ==================================== */
+.marque-section {
+    padding: 50px 0;
+    overflow: hidden; /* Clips the logos as they scroll */
+    background-color: #ffffff; /* Ensure a background to see logos */
+}
+.marque-section h2 {
+    margin-bottom: 30px;
+    font-size: 36px;
+    text-align: center;
+    /* FIX: Changed color from #980c0c to #1a1a1a (or a color visible on f8f8f8) */
+    color: #1a1a1a; 
+}
+.logo-track {
+    display: flex;
+    width: fit-content; /* Critical for scrolling */
+    /* Animation: name, duration, timing-function, iteration-count */
+    animation: scrollLogos 25s linear infinite;
+    padding: 10px 0;
+}
+.logo-item {
+    flex-shrink: 0;
+    width: 150px;
+    margin: 0 50px; /* Spacing between logos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-item img {
+    width: 100%;
+    height: auto;
+    /* If logos are dark, this will make them light for a dark background: */
+    /* filter: grayscale(100%) brightness(300%); */
+    /* If logos are light, this will make them dark for a light background: */
+    /* filter: grayscale(100%) brightness(50%); */
+    /* Keep the image filter commented out if images are already correct color/lightness */
+}
+
+/* Keyframes for the scrolling animation */
+@keyframes scrollLogos {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        /* Moves the track to the left by 50% of its total width. */
+        transform: translateX(-50%); 
+    }
+}
+
+/* ==================================== */
+/* 2. ABOUT US SECTION STYLES */
+/* ==================================== */
+.about-section {
+    padding: 80px 5%;
+    background-color: #fff;
+    text-align: center;
+    /* Animation properties */
+    opacity: 1;
+    transform: none;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+/* State when section is in view */
+.about-section.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+.about-section h2 {
+    font-size: 44px;
+    margin-bottom: 20px;
+    color: #CC0000; /* Brand color */
+}
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left; /* Aligns paragraphs nicely */
+}
+.about-content p {
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* ==================================== */
+/* 3. MAP SECTION STYLES */
+/* ==================================== */
+.map-section {
+    padding: 50px 5%;
+    background-color: #f1f1f1;
+    text-align: center;
+    /* Animation properties */
+    opacity: 1;
+    transform: none;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out 0.2s; /* Added 0.2s delay */
+}
+/* State when section is in view */
+.map-section.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+.map-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.map-container {
+    border-radius: 12px;
+    overflow: hidden; /* Clips the iframe corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none; /* Removes default iframe border */
+}
+        /* ==================================== */
+        /* 4. FOOTER SECTION STYLES */
+        /* ==================================== */
+        .site-footer {
+            background-color: #1a1a1a;
+            color: #aaa;
+            padding: 40px 5%;
+            font-size: 14px;
+            border-top: 5px solid #CC0000;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap; /* Allows columns to stack on mobile */
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-column {
+            flex: 1; /* Each column tries to take equal space */
+            min-width: 200px; /* Minimum width before stacking */
+            margin-bottom: 20px;
+        }
+        .footer-column h3 {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
+        }
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-column ul li {
+            margin-bottom: 8px;
+        }
+        .footer-column ul li a {
+            color: #aaa;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer-column ul li a:hover {
+            color: #CC0000; /* Brand color on hover */
+        }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            margin-top: 20px;
+        }
+        
+        /* ==================================== */
+        /* MOBILE RESPONSIVENESS */
+        /* ==================================== */
+        @media (max-width: 768px) {
+            /* General Section Adjustments */
+            .about-section, .map-section {
+                padding: 40px 4%; 
+            }
+            .about-section h2 {
+                font-size: 32px; 
+            }
+            .map-section h2 {
+                font-size: 30px;
+            }
+
+            /* Footer */
+            .footer-content {
+                flex-direction: column; /* Stack columns vertically */
+            }
+            .footer-column {
+                min-width: 100%;
+                margin-bottom: 30px;
+            }
+        }

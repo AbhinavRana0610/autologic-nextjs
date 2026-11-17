@@ -1,0 +1,77 @@
+{
+    "slug": "3-wheeler-inner-clutch-assembly",
+    "title": "Three Wheeler Inner Clutch Assembly Manufacturer | Autologic",
+    "description": "Autologic Industries is a three wheeler inner clutch assembly manufacturer, building heavy-duty clutch packs for auto rickshaws and cargo fleets.",
+    "keyword": "Three Wheeler Inner Clutch Assembly Manufacturer, Three Wheeler Inner Clutch Assembly Supplier, Three Wheeler Inner Clutch Assembly Exporter, Three Wheeler Auto Parts Manufacturer, Three Wheeler Auto Parts Exporter, Three Wheeler Auto Parts Supplier, auto rickshaw clutch assembly manufacturer, 3 wheeler clutch assembly",
+    "productSchema": {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Three Wheeler Inner Clutch Assembly",
+        "image": [
+            "https://autologicindustries.com/img/products_hd/banner_3w_parts.avif",
+            "https://autologicindustries.com/img/products_hd/3w_heavy_duty_assembly.avif"
+        ],
+        "description": "Precision-engineered three wheeler inner clutch assemblies and auto parts for auto rickshaws and commercial three wheelers. Heavy payload capacity, high thermal resistance, and extended durability.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Autologic Industries"
+        },
+        "manufacturer": {
+            "@type": "Organization",
+            "name": "Autologic Industries",
+            "url": "https://autologicindustries.com/"
+        },
+        "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://autologicindustries.com/3-wheeler-inner-clutch-assembly.php"
+        }
+    },
+    "faqSchema": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Who is a three wheeler inner clutch assembly manufacturer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Autologic Industries is a leading three wheeler inner clutch assembly manufacturer. Contact our team about specifications and bulk orders."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How can I source three wheeler inner clutch assemblies in bulk?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Share quantities, models (Bajaj, Piaggio, TVS, Atul) and part numbers; we confirm availability and terms."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I enquire about customised three wheeler inner clutch assembly specifications?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We review custom drawings, friction materials, springs and spline sizes for feasibility."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does Autologic Industries accept export enquiries for three wheeler parts?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Our export team handles containerised shipments and customs documents."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What information is required for a quotation?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Provide the product name, vehicle model, part number, quantity and destination."
+                }
+            }
+        ]
+    }
+}

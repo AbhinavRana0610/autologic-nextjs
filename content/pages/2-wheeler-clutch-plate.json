@@ -1,0 +1,61 @@
+{
+    "slug": "2-wheeler-clutch-plate",
+    "title": "Two Wheeler Friction Clutch Plate Manufacturer | Autologic",
+    "description": "Autologic Industries is a premier manufacturer, supplier, and exporter of high-friction two wheeler clutch plates and auto parts.",
+    "keyword": "Two Wheeler Friction Clutch Plate Manufacturer, Two Wheeler Friction Clutch Plate Supplier, Two Wheeler Friction Clutch Plate Exporter, Clutch Plate Supplier, Clutch Plate Exporter, motorcycle clutch disc",
+    "productSchema": {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Two Wheeler Friction Clutch Plates",
+        "image": [
+            "https://autologicindustries.com/img/products_hd/banner_2w_clutch_plate.avif",
+            "https://autologicindustries.com/img/products_hd/2w_clutch_pack.avif"
+        ],
+        "description": "High-friction, non-asbestos two wheeler friction clutch plates and auto parts for motorcycles and scooters. High thermal resistance, progressive modulation, and extended wear life.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Autologic Industries"
+        },
+        "manufacturer": {
+            "@type": "Organization",
+            "name": "Autologic Industries",
+            "url": "https://autologicindustries.com/"
+        },
+        "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://autologicindustries.com/2-wheeler-clutch-plate.php"
+        }
+    },
+    "faqSchema": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Who is a two wheeler friction clutch plate manufacturer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Autologic Industries is a leading two wheeler friction clutch plate manufacturer, producing high-friction, non-asbestos clutch plates and auto parts and delivering OEM-grade components nationwide and globally."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How can I source two wheeler friction clutch plates in bulk?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Provide your required vehicle model, lining material preferences (paper-based, cork, or sintered alloy), dimensions, and order quantity for a competitive wholesale quotation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does Autologic Industries export motorcycle clutch plates?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We export motorcycle and scooter clutch plates globally with seaworthy export packaging, private labelling, and full commercial export documentation."
+                }
+            }
+        ]
+    }
+}

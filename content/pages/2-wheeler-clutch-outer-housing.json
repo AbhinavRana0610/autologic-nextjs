@@ -1,0 +1,61 @@
+{
+    "slug": "2-wheeler-clutch-outer-housing",
+    "title": "Two Wheeler Clutch Outer Housing Manufacturer | Autologic",
+    "description": "Autologic Industries is a leading manufacturer, supplier, and exporter of two wheeler clutch outer housings and bike engine components.",
+    "keyword": "Two Wheeler Clutch Outer Housing Manufacturer, Clutch Housing Supplier, Clutch Housing Exporter, Bike Engine Components Manufacturer, Bike Engine Components Exporter, Bike Engine Components Supplier, die cast clutch housing",
+    "productSchema": {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Two Wheeler Clutch Outer Housing",
+        "image": [
+            "https://autologicindustries.com/img/products_hd/twin_clutch_plates_banner.avif",
+            "https://autologicindustries.com/img/products_hd/clutch_housing_outer_angled.avif"
+        ],
+        "description": "High-pressure die-cast aluminium two wheeler clutch outer housings and bike engine components. Built to dissipate intense heat, shield clutch packs, and endure aggressive acceleration.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Autologic Industries"
+        },
+        "manufacturer": {
+            "@type": "Organization",
+            "name": "Autologic Industries",
+            "url": "https://autologicindustries.com/"
+        },
+        "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://autologicindustries.com/2-wheeler-clutch-outer-housing.php"
+        }
+    },
+    "faqSchema": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Who is a two wheeler clutch outer housing manufacturer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Autologic Industries is a two wheeler clutch outer housing manufacturer producing high-pressure die-cast aluminium housings and bike engine components."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How can I source bike engine components and clutch housings in bulk?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Submit your part numbers, technical drawings, vehicle applications, and required batch quantities to our sales team for prompt wholesale pricing."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does Autologic Industries supply bike engine components for export?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. We export die-cast clutch housings and engine components worldwide with sea-worthy packing and customs support."
+                }
+            }
+        ]
+    }
+}

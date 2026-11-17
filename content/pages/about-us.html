@@ -1,0 +1,448 @@
+
+
+<style>
+/* 16:9 Full-Frame Video Banner for About Us - Left-Aligned Executive Card */.about-hero-clean {
+ position: relative;
+ overflow: hidden;
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+ width: 100%;
+ min-height: clamp(560px, 78vh, 880px);
+ aspect-ratio: 16 / 9;
+ max-height: 92vh;
+ padding: 4.5rem 1.5rem;
+ text-align: left;
+ background: #090d14;
+}.about-hero-video-wrap {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ overflow: hidden;
+ z-index: 0;
+ pointer-events: none;
+}.about-hero-video-bg {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ min-width: 100%;
+ min-height: 100%;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ object-position: center center;
+ transform: translate(-50%, -50%);
+}.about-hero-video-overlay {
+ position: absolute;
+ inset: 0;
+ background: linear-gradient(90deg, rgba(7, 11, 18, 0.72) 0%, rgba(7, 11, 18, 0.38) 55%, rgba(7, 11, 18, 0.5) 100%);
+ pointer-events: none;
+ z-index: 1;
+}.about-hero-clean.container {
+ position: relative;
+ z-index: 2;
+ width: 100%;
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+}.about-hero-content {
+ position: relative;
+ z-index: 2;
+ max-width: 580px;
+ margin: 0;
+ text-align: left;
+ padding: 2.25rem 2.5rem;
+ background: rgba(11, 15, 25, 0.62);
+ backdrop-filter: blur(12px);
+ -webkit-backdrop-filter: blur(12px);
+ border: 1px solid rgba(255, 255, 255, 0.12);
+ border-left: 4px solid var(--primary-color, #8f0000);
+ border-radius: 16px;
+ box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5), 0 4px 12px rgba(0, 0, 0, 0.3);
+ transform: translateY(-40px);
+}.about-hero-badge {
+ display: inline-flex;
+ align-items: center;
+ gap: 8px;
+ background: rgba(143, 0, 0, 0.28);
+ border: 1px solid rgba(255, 77, 77, 0.38);
+ color: #ffc4c4;
+ padding: 5px 14px;
+ border-radius: 30px;
+ font-size: 0.76rem;
+ font-weight: 700;
+ letter-spacing: 0.8px;
+ text-transform: uppercase;
+ margin-bottom: 1rem;
+}.about-badge-dot {
+ width: 7px;
+ height: 7px;
+ border-radius: 50%;
+ background: #ff3b3b;
+ box-shadow: 0 0 8px #ff3b3b;
+ animation: pulseBadgeDot 2s infinite;
+}
+
+@keyframes pulseBadgeDot {
+ 0%, 100% { opacity: 1; transform: scale(1); }
+ 50% { opacity: 0.5; transform: scale(0.85); }
+}.about-hero-content h1 {
+ font-size: clamp(1.95rem, 3.2vw, 2.85rem);
+ font-weight: 900;
+ color: #ffffff;
+ letter-spacing: -0.5px;
+ line-height: 1.15;
+ margin-bottom: 0.85rem;
+ text-transform: uppercase;
+ text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}.about-hero-tagline {
+ font-size: clamp(0.98rem, 1.2vw, 1.12rem);
+ font-weight: 400;
+ color: #e2e8f0;
+ line-height: 1.55;
+ margin-bottom: 1.75rem;
+ max-width: 500px;
+ margin-left: 0;
+ margin-right: 0;
+ text-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+}.about-hero-actions {
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+ flex-wrap: wrap;
+ gap: 12px;
+}.btn-hero-quote {
+ background: var(--primary-color, #8f0000);
+ color: #ffffff !important;
+ padding: 12px 22px;
+ border-radius: 8px;
+ font-weight: 700;
+ font-size: 0.92rem;
+ border: 1px solid rgba(255, 77, 77, 0.35);
+ display: inline-flex;
+ align-items: center;
+ gap: 8px;
+ cursor: pointer;
+ box-shadow: 0 4px 16px rgba(143, 0, 0, 0.5);
+ transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+ text-decoration: none !important;
+ line-height: 1.2;
+}.btn-hero-quote:hover {
+ background: #a80000;
+ color: #ffffff !important;
+ transform: translateY(-2px);
+ box-shadow: 0 8px 24px rgba(143, 0, 0, 0.65);
+}.btn-hero-wa {
+ background: #25D366;
+ color: #ffffff !important;
+ padding: 12px 18px;
+ border-radius: 8px;
+ font-weight: 600;
+ font-size: 0.92rem;
+ display: inline-flex;
+ align-items: center;
+ gap: 8px;
+ cursor: pointer;
+ transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+ box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+ text-decoration: none !important;
+ line-height: 1.2;
+ border: 1px solid rgba(255, 255, 255, 0.2);
+}.btn-hero-wa:hover {
+ background: #1eb956;
+ color: #ffffff !important;
+ transform: translateY(-2px);
+ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.55);
+}.btn-hero-call {
+ background: rgba(255, 255, 255, 0.12);
+ color: #ffffff !important;
+ padding: 12px 18px;
+ border-radius: 8px;
+ font-weight: 600;
+ font-size: 0.92rem;
+ border: 1px solid rgba(255, 255, 255, 0.22);
+ display: inline-flex;
+ align-items: center;
+ gap: 8px;
+ cursor: pointer;
+ transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+ text-decoration: none !important;
+ line-height: 1.2;
+ backdrop-filter: blur(4px);
+}.btn-hero-call:hover {
+ background: rgba(255, 255, 255, 0.22);
+ color: #ffffff !important;
+ border-color: #ffffff;
+ transform: translateY(-2px);
+}
+
+@media (min-width: 992px) {.about-hero-clean {
+ min-height: clamp(660px, 82vh, 940px);
+ max-height: 94vh;
+ padding: 5rem 3rem;
+ }
+}
+
+@media (min-width: 1400px) {.about-hero-clean {
+ min-height: clamp(740px, 86vh, 980px);
+ max-height: 96vh;
+ padding: 6rem 4rem;
+ }
+}
+
+@media (max-width: 768px) {.about-hero-content {
+ max-width: 100%;
+ padding: 1.75rem 1.5rem;
+ }
+}
+
+@media (max-width: 576px) {.about-hero-clean {
+ min-height: 500px;
+ aspect-ratio: auto;
+ padding: 2.5rem 1rem 3rem;
+ }.about-hero-content {
+ transform: translateY(-10px);
+ }.about-hero-content h1 {
+ font-size: 1.85rem;
+ }.about-hero-actions {
+ flex-direction: column;
+ align-items: stretch;
+ }.about-hero-actions a {
+ justify-content: center;
+ }
+}
+</style>
+
+<main class="about-page-wrapper">
+ <!-- 1. Hero / Banner Section with Video Background -->
+ <section class="about-hero-clean">
+ <!-- Background Video Banner -->
+ <div class="about-hero-video-wrap">
+ <video class="about-hero-video-bg" autoplay muted loop playsinline preload="auto">
+ <source src="img/about-banner.webm" type="video/webm">
+ </video>
+ <div class="about-hero-video-overlay"></div>
+ </div>
+
+ <div class="container">
+ <div class="about-hero-content">
+ <div class="about-hero-badge">
+ <span class="about-badge-dot"></span>
+ <span>Precision Drivetrain Manufacturing</span>
+ </div>
+ <h1>Autologic Industries</h1>
+ <p class="about-hero-tagline">
+ The Backbone of Reliable Mobility for 2 &amp; 3-Wheelers.
+ </p>
+ <div class="about-hero-actions">
+ <a href="#" onclick="openEmailModal(); return false;" class="btn-hero-quote" title="Request Bulk Quote">
+ <i class="fas fa-envelope-open-text"></i> Request Bulk Quote
+ </a>
+ <a href="#" onclick="openWhatsAppModal(); return false;" class="btn-hero-wa" title="WhatsApp Us">
+ <i class="fab fa-whatsapp"></i> WhatsApp Us
+ </a>
+ <a href="#" onclick="openCallModal(); return false;" class="btn-hero-call" title="Request Call">
+ <i class="fas fa-phone"></i> Request Call
+ </a>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- 2. Heritage & Story Section -->
+ <section class="about-heritage-section">
+ <div class="container">
+ <div class="about-heritage-grid">
+ <div class="about-heritage-copy">
+ <h2 class="sec-title-modern">
+ About Autologic Industries: India’s Trusted Automotive Component Manufacturer
+ </h2>
+ 
+ <p class="story-lead-para">
+ Autologic Industries is a leading Indian manufacturer of precision two wheeler, three-wheeler, and general automotive components. Built on the belief that <strong>"the smallest components hold the greatest responsibility,"</strong> we specialise in areas like clutch systems and precision die casting. Our growth is driven by constant reinvestment in advanced CNC machinery and IATF-certified quality control, making us a Tier-1 supplier and reliable exporter to numerous global manufacturers.
+ </p>
+ </div>
+
+ <div class="heritage-media-stage">
+ <div class="heritage-main-img-card">
+ <img src="img/abt.avif" alt="About Autologic Industries" loading="lazy" title="About Autologic Industries">
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- 3. Authentic Facility Images Strip -->
+ <section class="about-facility-section">
+ <div class="container">
+ <div class="facility-cards-grid">
+ <div class="facility-card">
+ <div class="facility-img-wrap">
+ <img src="img/products_hd/factory_cnc_machining.avif?v=20261003_avif" alt="Autologic Industries CNC Machining" loading="lazy" title="Autologic Industries CNC Machining">
+ </div>
+ </div>
+ <div class="facility-card">
+ <div class="facility-img-wrap">
+ <img src="img/products_hd/factory_batch_production.avif?v=20261003_avif" alt="Autologic Industries Batch Production" loading="lazy" title="Autologic Industries Batch Production">
+ </div>
+ </div>
+ <div class="facility-card">
+ <div class="facility-img-wrap">
+ <img src="img/products_hd/factory_precision_inspection.avif?v=20261003_avif" alt="Autologic Industries Quality Inspection" loading="lazy" title="Autologic Industries Quality Inspection">
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- 4. Mission & Vision -->
+ <section class="about-mission-section">
+ <div class="container">
+ <div class="mission-vision-grid">
+ <div class="mission-vision-card">
+ <div class="mission-card-header">
+ <div class="mission-icon-box">
+ <i class="fas fa-bullseye"></i>
+ </div>
+ <h3>Our Mission</h3>
+ </div>
+ <p>To manufacture and sell high-performance automobile parts that enable advancement, mobility, and dependability—for every car, every road, and every client.</p>
+ </div>
+
+ <div class="mission-vision-card">
+ <div class="mission-card-header">
+ <div class="mission-icon-box">
+ <i class="fas fa-eye"></i>
+ </div>
+ <h3>Our Vision</h3>
+ </div>
+ <p>To be an innovative component manufacturer, known for our engineering prowess, moral behaviour, and worldwide influence.</p>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- 5. Our Impact Section -->
+ <section id="stats" class="about-impact-section">
+ <div class="container">
+ <div class="impact-header-box">
+ <h2>Our Impact</h2>
+ </div>
+
+ <div class="impact-grid-modern">
+ <div class="impact-card-modern">
+ <div class="impact-number-wrapper">
+ <span class="impact-counter-val" data-target="25">0</span>
+ </div>
+ <p>Years of Service</p>
+ </div>
+
+ <div class="impact-card-modern">
+ <div class="impact-number-wrapper">
+ <span class="impact-counter-val" data-target="1500">0</span>
+ <span class="impact-plus-sign">+</span>
+ </div>
+ <p>Total Projects Completed</p>
+ </div>
+
+ <div class="impact-card-modern">
+ <div class="impact-number-wrapper">
+ <span class="impact-counter-val" data-target="1000">0</span>
+ <span class="impact-plus-sign">+</span>
+ </div>
+ <p>Happy Clients Worldwide</p>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- 6. Our Core Commitment -->
+ <section class="about-commitments-section">
+ <div class="container">
+ <h2 class="sec-title-modern sec-title-center" style="margin-bottom: 2.5rem;">
+ Our Core Commitment
+ </h2>
+
+ <div class="commitments-grid-modern">
+ <div class="commitment-card-modern">
+ <div class="commitment-icon-circle">
+ <i class="fas fa-cogs"></i>
+ </div>
+ <h3>Precision Engineering</h3>
+ </div>
+
+ <div class="commitment-card-modern">
+ <div class="commitment-icon-circle">
+ <i class="fas fa-shield-alt"></i>
+ </div>
+ <h3>Uncompromising Quality</h3>
+ </div>
+
+ <div class="commitment-card-modern">
+ <div class="commitment-icon-circle">
+ <i class="fas fa-leaf"></i>
+ </div>
+ <h3>Sustainable Practices</h3>
+ </div>
+
+ <div class="commitment-card-modern">
+ <div class="commitment-icon-circle">
+ <i class="fas fa-handshake"></i>
+ </div>
+ <h3>Customer-Centric Service</h3>
+ </div>
+ </div>
+ </div>
+ </section>
+</main>
+
+<script>
+ document.addEventListener('DOMContentLoaded', function () {
+ const aboutVid = document.querySelector('.about-hero-video-bg');
+ if (aboutVid) {
+ aboutVid.muted = true;
+ aboutVid.play().catch(function() {});
+ }
+
+ const counters = document.querySelectorAll('.impact-counter-val');
+ const speed = 60;
+
+ const animateCounter = (counter) => {
+ const target = +counter.getAttribute('data-target');
+ let count = 0;
+ const increment = target / speed;
+
+ const updateCount = () => {
+ if (count < target) {
+ count = Math.ceil(count + increment);
+ if (count > target) count = target;
+ counter.innerText = count.toLocaleString();
+ setTimeout(updateCount, 25);
+ } else {
+ counter.innerText = target.toLocaleString();
+ }
+ };
+
+ updateCount();
+ };
+
+ const statsSection = document.getElementById('stats');
+ if (statsSection && 'IntersectionObserver' in window) {
+ const observer = new IntersectionObserver((entries, obs) => {
+ entries.forEach(entry => {
+ if (entry.isIntersecting) {
+ counters.forEach(counter => animateCounter(counter));
+ obs.unobserve(entry.target);
+ }
+ });
+ }, { threshold: 0.35 });
+
+ observer.observe(statsSection);
+ } else {
+ counters.forEach(counter => animateCounter(counter));
+ }
+ });
+</script>
+

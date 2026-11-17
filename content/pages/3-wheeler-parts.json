@@ -1,0 +1,36 @@
+{
+    "slug": "3-wheeler-parts",
+    "title": "Three Wheeler Parts Manufacturer | Autologic",
+    "description": "Premium three wheeler parts manufacturer. Autologic manufactures heavy-duty auto-rickshaw powertrain, brake, and chassis components.",
+    "keyword": "Best three-wheeler parts manufacturer, leading three-wheeler spare parts manufacturer, premium quality three-wheeler components manufacturer, trusted auto rickshaw parts manufacturer, custom three-wheeler spare parts manufacturer, OEM three-wheeler parts manufacturer, affordable three-wheeler components manufacturer, high-performance three-wheeler engine parts manufacturer, durable three-wheeler body parts manufacturer, reputed three-wheeler accessories manufacturer, top three-wheeler parts supplier, reliable three-wheeler spare parts supplier, certified three-wheeler components supplier, wholesale auto rickshaw spare parts supplier, trusted three-wheeler parts supplier, bulk three-wheeler accessories supplier, affordable three-wheeler spare parts supplier, leading three-wheeler engine components supplier, three-wheeler electrical parts supplier, nationwide three-wheeler parts distributor and supplier, reliable three-wheeler parts exporter, leading three-wheeler spare parts exporter, global supplier of three-wheeler components, trusted auto rickshaw parts exporter, IATF-certified three-wheeler parts exporter, top three-wheeler spare parts exporter, Delhi manufacturer and exporter of three-wheeler spares, premium three-wheeler accessories exporter, export quality three-wheeler parts manufacturer, worldwide exporter of Delhi three-wheeler spare parts.",
+    "faqSchema": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Three-Wheeler Parts Manufacturer",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "As a three wheeler parts manufacturer, we produce engine, transmission, braking, suspension and electrical parts for passenger and cargo three-wheelers, backed by rigorous quality testing."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Three-Wheeler Parts Supplier",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "As a three wheeler parts supplier across India, we serve workshops, dealerships and fleets with reliable stock and timely deliveries."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Three-Wheeler Parts Exporter",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "As a three wheeler parts exporter from India, we deliver durable parts that meet international quality standards worldwide."
+                }
+            }
+        ]
+    }
+}
