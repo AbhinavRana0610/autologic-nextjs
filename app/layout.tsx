@@ -33,9 +33,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="stylesheet" href="/css/style.css" />
         <link rel="stylesheet" href="/css/products.css?v=20261028_fix_pill_wrap" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
-        <link rel="shortcut icon" href="/img/logo.avif" type="image/png" />
-        <link rel="icon" type="image/png" href="/img/logo.avif" />
-        <link rel="apple-touch-icon" href="/img/logo.avif" />
+        <link rel="icon" href="/favicon.ico" sizes="48x48" />
+        <link rel="icon" type="image/png" href="/img/favicon.png" />
+        <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
           rel="stylesheet"
